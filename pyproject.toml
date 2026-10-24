@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "governed-multiagent"
+version = "0.1.0"
+description = "Governance and audit foundation for a governed multi-agent e-commerce and accounting research prototype"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Research prototype; see repository terms" }
+authors = [{ name = "MultiAgentAI-Research" }]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.6",
+    "seaborn>=0.12",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+validate-artifacts = "governed_multiagent.validation.artifacts:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["governed_multiagent*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests", "reports/dataset_report/tests"]
+pythonpath = ["src", "reports/dataset_report", "reports/dataset_selection_table/scripts"]
+addopts = "-ra"

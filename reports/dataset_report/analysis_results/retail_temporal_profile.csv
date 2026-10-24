@@ -1,0 +1,3 @@
+dataset,table,sheet,column,n_non_null,n_missing,min_timestamp,max_timestamp,span_days
+OnlineRetailII,online_retail_II,Year 2009-2010,InvoiceDate,525461,0,2009-12-01 07:45:00,2010-12-09 20:01:00,373.511
+OnlineRetailII,online_retail_II,Year 2010-2011,InvoiceDate,541910,0,2010-12-01 08:26:00,2011-12-09 12:50:00,373.183

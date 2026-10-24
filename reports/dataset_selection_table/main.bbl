@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{chen2012}
+Daqing Chen.
+\newblock Online retail ii.
+\newblock \url{https://archive.ics.uci.edu/dataset/502/online+retail+ii}, 2012.
+\newblock UCI repository record; CC BY 4.0 stated on the official record.
+
+\bibitem{olistDataset}
+{Olist}.
+\newblock Brazilian e-commerce public dataset by olist.
+\newblock \url{https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce}.
+\newblock Kaggle listing; release and license metadata not independently
+  verified.
+
+\end{thebibliography}

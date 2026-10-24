@@ -1,0 +1,12 @@
+dataset,table,candidate_key,key_columns,n_rows,n_rows_with_missing_key_component,n_distinct_key_values,duplicate_excess_rows,is_unique_among_keyed_rows
+Olist,customers,customer_id,customer_id,99441,0,99441,0,True
+Olist,customers,customer_unique_id,customer_unique_id,99441,0,96096,3345,False
+Olist,orders,order_id,order_id,99441,0,99441,0,True
+Olist,order_items,order_id+order_item_id,order_id+order_item_id,112650,0,112650,0,True
+Olist,order_payments,order_id+payment_sequential,order_id+payment_sequential,103886,0,103886,0,True
+Olist,order_reviews,review_id,review_id,99224,0,98410,814,False
+Olist,order_reviews,order_id,order_id,99224,0,98673,551,False
+Olist,products,product_id,product_id,32951,0,32951,0,True
+Olist,sellers,seller_id,seller_id,3095,0,3095,0,True
+Olist,product_category_translation,product_category_name,product_category_name,71,0,71,0,True
+Olist,geolocation,geolocation_zip_code_prefix,geolocation_zip_code_prefix,1000163,0,19015,981148,False

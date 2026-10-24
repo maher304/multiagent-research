@@ -1,0 +1,103 @@
+{
+  "olist": {
+    "temporal_integrity": {
+      "orders_approved_before_purchase": 0,
+      "orders_delivered_before_purchase": 0,
+      "orders_delivered_before_carrier": 23,
+      "order_purchase_min": "2016-09-04 21:15:19",
+      "order_purchase_max": "2018-10-17 17:30:18"
+    },
+    "monetary": {
+      "items_total_price": 13591643.7,
+      "items_total_freight": 2251909.54,
+      "items_total_value": 15843553.24,
+      "payments_total_value": 16008872.12,
+      "avg_payment_value": 154.1004,
+      "n_negative_price_lines": 0,
+      "n_zero_price_lines": 0,
+      "n_negative_freight_lines": 0
+    },
+    "reconciliation_proxy": {
+      "orders_with_both_payment_and_items": 98665,
+      "orders_match_within_1_cent": 98287,
+      "match_pct_within_1_cent": 99.6169,
+      "mean_abs_difference": 0.0332
+    },
+    "category_coverage": {
+      "products_with_category": 32341,
+      "products_missing_category": 610,
+      "distinct_categories_in_products": 73,
+      "categories_covered_by_translation": 32328,
+      "coverage_pct": 99.9598,
+      "translation_rows": 71
+    },
+    "customers": {
+      "distinct_customer_id": 99441,
+      "distinct_customer_unique_id": 96096,
+      "customer_unique_ids_with_multiple_rows": 2997,
+      "max_rows_per_customer_unique_id": 17
+    },
+    "geolocation": {
+      "n_rows": 1000163,
+      "distinct_zip_prefix": 19015,
+      "max_rows_per_zip_prefix": 1146,
+      "mean_rows_per_zip_prefix": 52.5986
+    },
+    "n_tables": 9
+  },
+  "online_retail_ii": {
+    "combined": {
+      "n_rows_both_sheets": 1067371,
+      "n_distinct_invoice": 53628,
+      "n_distinct_customers": 5942,
+      "n_missing_customer_id": 243007,
+      "missing_customer_id_pct": 22.7669,
+      "n_distinct_stockcode": 5304,
+      "n_distinct_country": 43,
+      "n_cancellation_invoices": 8292,
+      "n_cancellation_rows": 19494,
+      "net_revenue": 19287250.57,
+      "gross_sales_positive": 20972968.14,
+      "all_negative_line_value": -1685717.57,
+      "date_min": "2009-12-01 07:45:00",
+      "date_max": "2011-12-09 12:50:00",
+      "n_customers_both_sheets": 2813,
+      "n_customers_only_sheet1": 1570,
+      "n_customers_only_sheet2": 1559
+    },
+    "value_distribution": {
+      "n_positive_lines": 1041671,
+      "value_p50": 9.96,
+      "value_p95": 60.0,
+      "value_p99": 183.6,
+      "value_max": 168469.6
+    }
+  },
+  "dimensions": {
+    "olist": {
+      "total_rows": 1550922,
+      "total_cols": 52,
+      "n_tables": 9
+    },
+    "online_retail_ii": {
+      "total_rows": 1067371,
+      "total_cols": 16,
+      "n_sheets": 2
+    }
+  },
+  "figures": [
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_olist_orders_monthly.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_olist_order_status.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_olist_payment_types.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_olist_review_scores.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_olist_category_revenue.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_olist_missingness.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_retail_monthly_lines.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_retail_net_revenue_monthly.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_retail_top_countries.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_retail_value_distribution.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_retail_quality_signals.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_retail_cancellation_rate.png",
+    "C:/Users/pc/MultiAgentAI-Research/reports/dataset_report/figures/fig_completeness_comparison.png"
+  ]
+}

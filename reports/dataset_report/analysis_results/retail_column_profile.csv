@@ -1,0 +1,17 @@
+dataset,table,sheet,column,pandas_dtype,n_rows,n_non_null,n_missing,missing_pct,n_unique,unique_pct_of_present
+OnlineRetailII,online_retail_II,Year 2009-2010,Invoice,object,525461,525461,0,0,28816,5.4839
+OnlineRetailII,online_retail_II,Year 2009-2010,StockCode,object,525461,525461,0,0,4631,0.8813
+OnlineRetailII,online_retail_II,Year 2009-2010,Description,string,525461,522533,2928,0.5572,4643,0.8886
+OnlineRetailII,online_retail_II,Year 2009-2010,Quantity,int64,525461,525461,0,0,825,0.157
+OnlineRetailII,online_retail_II,Year 2009-2010,InvoiceDate,datetime64[ns],525461,525461,0,0,25296,4.8141
+OnlineRetailII,online_retail_II,Year 2009-2010,Price,float64,525461,525461,0,0,1606,0.3056
+OnlineRetailII,online_retail_II,Year 2009-2010,Customer ID,float64,525461,417534,107927,20.5395,4383,1.0497
+OnlineRetailII,online_retail_II,Year 2009-2010,Country,string,525461,525461,0,0,40,0.0076
+OnlineRetailII,online_retail_II,Year 2010-2011,Invoice,object,541910,541910,0,0,25900,4.7794
+OnlineRetailII,online_retail_II,Year 2010-2011,StockCode,object,541910,541910,0,0,4070,0.751
+OnlineRetailII,online_retail_II,Year 2010-2011,Description,string,541910,540456,1454,0.2683,4211,0.7792
+OnlineRetailII,online_retail_II,Year 2010-2011,Quantity,int64,541910,541910,0,0,722,0.1332
+OnlineRetailII,online_retail_II,Year 2010-2011,InvoiceDate,datetime64[ns],541910,541910,0,0,23260,4.2922
+OnlineRetailII,online_retail_II,Year 2010-2011,Price,float64,541910,541910,0,0,1630,0.3008
+OnlineRetailII,online_retail_II,Year 2010-2011,Customer ID,float64,541910,406830,135080,24.9266,4372,1.0747
+OnlineRetailII,online_retail_II,Year 2010-2011,Country,string,541910,541910,0,0,38,0.007

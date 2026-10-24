@@ -1,0 +1,200 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{wooldridge2009}
+\citation{shoham2009}
+\citation{russellNorvig2021}
+\citation{pythonDocs}
+\citation{mckinney2010}
+\citation{pandasDocs}
+\citation{harris2020numpy}
+\citation{numpyDocs}
+\citation{hunter2007matplotlib}
+\citation{matplotlibDocs}
+\citation{waskom2021seaborn}
+\citation{seabornDocs}
+\citation{openpyxlDocs}
+\citation{pytestDocs}
+\citation{miktexDocs}
+\@writefile{toc}{\contentsline {section}{Glossary, Abbreviations and Status Vocabulary}{3}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Executive Summary}{3}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Software objective.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What kind of system the repository contains.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Main implemented modules.}{3}{section*.5}\protected@file@percent }
+\citation{hevner2004}
+\citation{olistDataset}
+\citation{chen2012}
+\@writefile{toc}{\contentsline {paragraph}{Technologies.}{4}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Implementation maturity.}{4}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Principal limitations.}{4}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Introduction and Software Scope}{4}{section.2}\protected@file@percent }
+\newlabel{sec:scope}{{2}{4}{Introduction and Software Scope}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Role of the codebase in the research project}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Concept, proposal, implementation and plan}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}What the current code can actually execute}{4}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Development Environment and Technologies}{5}{section.3}\protected@file@percent }
+\newlabel{sec:env}{{3}{5}{Development Environment and Technologies}{section.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Technologies verified to be used by the repository's code, with the file evidence. No library is listed merely because it is common in AI projects.}}{6}{table.caption.9}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:tech}{{1}{6}{Technologies verified to be used by the repository's code, with the file evidence. No library is listed merely because it is common in AI projects}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {paragraph}{Technologies deliberately absent.}{6}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Operating-system assumptions.}{6}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Repository Structure}{7}{section.4}\protected@file@percent }
+\newlabel{sec:repo}{{4}{7}{Repository Structure}{section.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Relevant repository contents and their status. Byte-code caches, \texttt  {.pytest\_cache} directories and the large raw data files are omitted. \textbf  {Bold} entries indicate findings that matter for the roadmap.}}{7}{table.caption.12}\protected@file@percent }
+\newlabel{tab:repo}{{2}{7}{Relevant repository contents and their status. Byte-code caches, \code {.pytest\_cache} directories and the large raw data files are omitted. \textbf {Bold} entries indicate findings that matter for the roadmap}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Not present.}{8}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Software Architecture}{8}{section.5}\protected@file@percent }
+\newlabel{sec:arch}{{5}{8}{Software Architecture}{section.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Repository and module architecture as observed. Green solid boxes are implemented code; amber marks the partially implemented provenance mechanism; dashed boxes are proposed and have no implementation in the repository; grey marks external read-only data.}}{8}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:repo}{{1}{8}{Repository and module architecture as observed. Green solid boxes are implemented code; amber marks the partially implemented provenance mechanism; dashed boxes are proposed and have no implementation in the repository; grey marks external read-only data}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Layer by layer}{8}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Architectural character}{9}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Main Execution Workflow}{9}{section.6}\protected@file@percent }
+\newlabel{sec:workflow}{{6}{9}{Main Execution Workflow}{section.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The three real execution paths. Path~A is the analysis package, Path~B the standard-library inspector, Path~C the test suite. Amber boxes are validation gates that raise and abort the run.}}{10}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:workflow}{{2}{10}{The three real execution paths. Path~A is the analysis package, Path~B the standard-library inspector, Path~C the test suite. Amber boxes are validation gates that raise and abort the run}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Path A --- \texttt  {python -m analysis}}{10}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Path B --- \texttt  {inspect\_datasets.py}}{11}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Path C --- the test suite}{11}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Detailed Code Analysis}{11}{section.7}\protected@file@percent }
+\newlabel{sec:code}{{7}{11}{Detailed Code Analysis}{section.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Measured size of the Python code. The repository contains \textbf  {no class definitions at all}, which is decisive evidence that no agent is implemented.}}{11}{table.caption.16}\protected@file@percent }
+\newlabel{tab:inventory}{{3}{11}{Measured size of the Python code. The repository contains \textbf {no class definitions at all}, which is decisive evidence that no agent is implemented}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}\texttt  {analysis/config.py}}{11}{subsection.7.1}\protected@file@percent }
+\citation{wilkinson2016}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}\texttt  {analysis/profiling.py}}{12}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}\texttt  {analysis/olist.py}}{12}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}\texttt  {analysis/online\_retail.py}}{12}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}\texttt  {analysis/compare.py}}{12}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}\texttt  {analysis/figures.py}}{13}{subsection.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}\texttt  {analysis/\_\_main\_\_.py}}{13}{subsection.7.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.8}\texttt  {reports/dataset\_report/tests/test\_analysis.py}}{13}{subsection.7.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.9}\texttt  {reports/dataset\_selection\_table/scripts/inspect\_datasets.py}}{13}{subsection.7.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.10}\texttt  {reports/Agents reports/figures/make\_figures.py}}{13}{subsection.7.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Implementation of the Seven Agents}{13}{section.8}\protected@file@percent }
+\newlabel{sec:agents}{{8}{13}{Implementation of the Seven Agents}{section.8}{}}
+\citation{coso2013}
+\citation{sox2002}
+\citation{chandola2009}
+\citation{ngai2011}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Implementation status of the seven conceptual agents, determined from repository evidence. No agent has executable code.}}{14}{table.caption.17}\protected@file@percent }
+\newlabel{tab:agstatus}{{4}{14}{Implementation status of the seven conceptual agents, determined from repository evidence. No agent has executable code}{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Orchestrator / Coordination Agent}{14}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}E-Commerce Operations Agent}{14}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Inventory Management Agent}{14}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Accounting Agent}{14}{subsection.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Risk and Anomaly Detection Agent}{15}{subsection.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}Governance and Policy Enforcement Agent}{15}{subsection.8.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.7}Audit and Traceability Agent}{15}{subsection.8.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Agent interaction. Everything above the green band is the proposed design; the green band is the only implemented communication mechanism, namely direct Python calls in a single sequential process.}}{15}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:agents}{{3}{15}{Agent interaction. Everything above the green band is the proposed design; the green band is the only implemented communication mechanism, namely direct Python calls in a single sequential process}{figure.caption.18}{}}
+\citation{batini2009}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Data Pipeline and Dataset Integration}{16}{section.9}\protected@file@percent }
+\newlabel{sec:pipeline}{{9}{16}{Data Pipeline and Dataset Integration}{section.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The implemented data pipeline. Red marks the validation gates that abort the run on failure; amber marks the explicit statement of what the data cannot support.}}{16}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:pipeline}{{4}{16}{The implemented data pipeline. Red marks the validation gates that abort the run on failure; amber marks the explicit statement of what the data cannot support}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {paragraph}{Input discovery and loading.}{16}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Formats and paths.}{16}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Column selection and type conversion.}{16}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Missing-value handling.}{16}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Duplicate detection.}{17}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Identifier validation.}{17}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Transformations and joins.}{17}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Feature engineering.}{17}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Output generation.}{17}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Operations performed by code versus recommendations.}{17}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{A verified cross-tool inconsistency.}{17}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Data Contracts and Schemas}{17}{section.10}\protected@file@percent }
+\newlabel{sec:schemas}{{10}{17}{Data Contracts and Schemas}{section.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{What exists: implicit contracts.}{17}{section*.31}\protected@file@percent }
+\citation{nistAirmf2023}
+\citation{nistAi6001}
+\citation{iso42001}
+\@writefile{toc}{\contentsline {paragraph}{What does not exist: agent-facing contracts.}{18}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Agent Communication and Workflow Orchestration}{18}{section.11}\protected@file@percent }
+\newlabel{sec:comms}{{11}{18}{Agent Communication and Workflow Orchestration}{section.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Mechanism actually used.}{18}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mechanisms not used.}{18}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Retries, error propagation and conflicting results.}{18}{section*.35}\protected@file@percent }
+\citation{gdpr2016}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Governance, Security and Audit Implementation}{19}{section.12}\protected@file@percent }
+\newlabel{sec:governance}{{12}{19}{Governance, Security and Audit Implementation}{section.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Governance and audit controls. The left column is enforced by code; the right column, and the middle of the flow strip, are design only.}}{19}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:gov}{{5}{19}{Governance and audit controls. The left column is enforced by code; the right column, and the middle of the flow strip, are design only}{figure.caption.36}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Every governance-relevant control found, classified as (1) enforced by the software, (2) documented but not enforced, or (3) proposed/absent. Applying the standard of Section~12 of the task, only the first five rows are technically enforced.}}{20}{table.caption.37}\protected@file@percent }
+\newlabel{tab:controls}{{5}{20}{Every governance-relevant control found, classified as (1) enforced by the software, (2) documented but not enforced, or (3) proposed/absent. Applying the standard of Section~12 of the task, only the first five rows are technically enforced}{table.caption.37}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Testing and Code Quality}{21}{section.13}\protected@file@percent }
+\newlabel{sec:testing}{{13}{21}{Testing and Code Quality}{section.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Test coverage as measured. The left column is covered by the existing thirteen assertions; the right column is verified to be uncovered.}}{21}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:testing}{{6}{21}{Test coverage as measured. The left column is covered by the existing thirteen assertions; the right column is verified to be uncovered}{figure.caption.38}{}}
+\@writefile{toc}{\contentsline {paragraph}{Framework and layout.}{21}{section*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Command executed and observed result.}{21}{section*.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What the tests actually assert.}{21}{section*.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility check performed.}{21}{section*.42}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Test layers that are absent.}{22}{section*.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Coverage gaps and recommended tests.}{22}{section*.44}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Tooling and code-quality observations.}{22}{section*.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {14}Execution and Reproducibility Guide}{22}{section.14}\protected@file@percent }
+\newlabel{sec:exec}{{14}{22}{Execution and Reproducibility Guide}{section.14}{}}
+\@writefile{toc}{\contentsline {paragraph}{1. Prerequisites.}{22}{section*.46}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{2. Environment setup.}{22}{section*.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{3. Dependency installation.}{22}{section*.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{4. Configuration setup.}{22}{section*.49}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{5. Dataset placement.}{22}{section*.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{6. Execution commands.}{23}{section*.51}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{7. Test commands.}{23}{section*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{8. Output locations.}{23}{section*.53}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{9. Troubleshooting.}{23}{section*.54}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {15}Outputs and Evaluation}{23}{section.15}\protected@file@percent }
+\newlabel{sec:outputs}{{15}{23}{Outputs and Evaluation}{section.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {15.1}Artifacts produced by the code}{23}{subsection.15.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Artifacts generated by the code. \texttt  {analysis\_results} contains 26 CSV files plus \texttt  {summary.json}; the file list above groups the nine retail CSVs.}}{24}{table.caption.55}\protected@file@percent }
+\newlabel{tab:outputs}{{6}{24}{Artifacts generated by the code. \code {analysis\_results} contains 26 CSV files plus \code {summary.json}; the file list above groups the nine retail CSVs}{table.caption.55}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {15.2}Evaluation status and proposed plan}{25}{subsection.15.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16}Limitations and Technical Debt}{25}{section.16}\protected@file@percent }
+\newlabel{sec:limits}{{16}{25}{Limitations and Technical Debt}{section.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Prioritized findings. D2, D3, D4 and R1 have the highest immediate impact on correctness and on the roadmap.}}{26}{table.caption.56}\protected@file@percent }
+\newlabel{tab:limits}{{7}{26}{Prioritized findings. D2, D3, D4 and R1 have the highest immediate impact on correctness and on the roadmap}{table.caption.56}{}}
+\@writefile{toc}{\contentsline {paragraph}{Note on integrity claims.}{26}{section*.57}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {17}Development Roadmap}{27}{section.17}\protected@file@percent }
+\newlabel{sec:roadmap}{{17}{27}{Development Roadmap}{section.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Prioritized roadmap. Phases~3 and~4 deliberately precede agent implementation: without a policy gate and an audit store, no agent action would be governable or traceable.}}{27}{table.caption.58}\protected@file@percent }
+\newlabel{tab:roadmap}{{8}{27}{Prioritized roadmap. Phases~3 and~4 deliberately precede agent implementation: without a policy gate and an audit store, no agent action would be governable or traceable}{table.caption.58}{}}
+\bibstyle{plain}
+\bibdata{references}
+\bibcite{nistAi6001}{1}
+\bibcite{batini2009}{2}
+\bibcite{chandola2009}{3}
+\@writefile{toc}{\contentsline {section}{\numberline {18}Conclusion}{28}{section.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {19}References and Technical Documentation}{28}{section.19}\protected@file@percent }
+\newlabel{sec:refs}{{19}{28}{References and Technical Documentation}{section.19}{}}
+\bibcite{chen2012}{4}
+\bibcite{coso2013}{5}
+\bibcite{gdpr2016}{6}
+\bibcite{openpyxlDocs}{7}
+\bibcite{harris2020numpy}{8}
+\bibcite{hevner2004}{9}
+\bibcite{hunter2007matplotlib}{10}
+\bibcite{iso42001}{11}
+\bibcite{matplotlibDocs}{12}
+\bibcite{mckinney2010}{13}
+\bibcite{miktexDocs}{14}
+\bibcite{ngai2011}{15}
+\bibcite{numpyDocs}{16}
+\bibcite{olistDataset}{17}
+\bibcite{pytestDocs}{18}
+\bibcite{pythonDocs}{19}
+\bibcite{russellNorvig2021}{20}
+\bibcite{shoham2009}{21}
+\bibcite{nistAirmf2023}{22}
+\bibcite{pandasDocs}{23}
+\bibcite{sox2002}{24}
+\bibcite{waskom2021seaborn}{25}
+\bibcite{seabornDocs}{26}
+\bibcite{wilkinson2016}{27}
+\bibcite{wooldridge2009}{28}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Repository Inventory and Verification Log}{30}{appendix.A}\protected@file@percent }
+\newlabel{app:log}{{A}{30}{Repository Inventory and Verification Log}{appendix.A}{}}
+\gdef \@abspage@last{32}

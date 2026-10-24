@@ -1,0 +1,54 @@
+\begin{thebibliography}{1}
+
+\bibitem{batini2009}
+Carlo Batini, Cinzia Cappiello, Chiara Francalanci, and Andrea Maurino.
+\newblock Methodologies for data quality assessment and improvement.
+\newblock {\em ACM Computing Surveys}, 41(3):1--52, 2009.
+
+\bibitem{chandola2009}
+Varun Chandola, Arindam Banerjee, and Vipin Kumar.
+\newblock Anomaly detection: A survey.
+\newblock {\em ACM Computing Surveys}, 41(3):1--58, 2009.
+
+\bibitem{chen2012}
+Daqing Chen.
+\newblock Online retail ii, 2012.
+\newblock Licensed under Creative Commons Attribution 4.0 International (CC BY
+  4.0); 1{,}067{,}371 instances, transactions from 01/12/2009 to 09/12/2011.
+
+\bibitem{gdpr2016}
+{European Parliament and Council of the European Union}.
+\newblock Regulation ({EU}) 2016/679 on the protection of natural persons with
+  regard to the processing of personal data (general data protection
+  regulation).
+\newblock Official Journal of the European Union, L 119, 2016.
+
+\bibitem{iso42001}
+{International Organization for Standardization and International
+  Electrotechnical Commission}.
+\newblock {ISO/IEC 42001:2023} information technology --- artificial
+  intelligence --- management system.
+\newblock International Standard, Edition 1, 2023.
+\newblock Published 2023-12; prepared by ISO/IEC JTC 1/SC 42.
+
+\bibitem{olistDataset}
+{Olist}.
+\newblock Brazilian e-commerce public dataset by olist.
+\newblock Online dataset, 2018.
+\newblock Nine relational CSV files; licence CC BY-NC-SA 4.0 (NonCommercial,
+  ShareAlike), as stated on the Kaggle data card when last checked; accessed
+  via local copy.
+
+\bibitem{nistAirmf2023}
+Elham Tabassi.
+\newblock Artificial intelligence risk management framework ({AI RMF} 1.0).
+\newblock Technical Report NIST AI 100-1, National Institute of Standards and
+  Technology, 2023.
+
+\bibitem{wilkinson2016}
+Mark~D. Wilkinson, Michel Dumontier, IJsbrand~Jan Aalbersberg, et~al.
+\newblock The {FAIR} guiding principles for scientific data management and
+  stewardship.
+\newblock {\em Scientific Data}, 3:160018, 2016.
+
+\end{thebibliography}

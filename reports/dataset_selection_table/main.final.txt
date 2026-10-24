@@ -1,0 +1,376 @@
+                   Dataset Selection and Suitability Analysis
+    Governed Multi-Agent AI for Autonomous E-Commerce and Accounting Operations
+
+
+
+                                            10 October 2026
+
+
+                                                 Abstract
+          This report evaluates the local Olist Brazilian E-Commerce dataset and Online Retail
+      II for a governed multi-agent e-commerce and accounting prototype. All nine Olist CSV
+      tables and the two worksheets in the local Online Retail II workbook were inspected without
+      modifying source files. Olist comprises 9 tables, including 99,441 orders, 112,650 order-item
+      rows, 103,886 payment rows, and 32,951 products. Online Retail II contains 1,067,371 line
+      records in two annual worksheets and the expected eight transaction fields. Olist supports
+      broader linked order and marketplace workflows; Online Retail II provides a much larger
+      product-line transaction history. Neither dataset provides complete inventory movements, a
+      general ledger, explicit governance policies, or verified fraud labels. The datasets are therefore
+      suitable for transaction replay, rule-based prototype checks, and auditable derived summaries,
+      subject to careful handling of missingness, duplicate rows, and return/cancellation semantics.
+      They must be integrated through independent source adapters; actual records must not be
+      joined across datasets.
+
+
+1     Introduction and research context
+The project studies a prototype with orchestration, e-commerce, inventory, accounting, risk,
+governance, and audit agents. Public transaction datasets can supply evidence for replayable
+workflows, but they do not by themselves instantiate agents or business controls. This assessment
+separates observable source fields from derived analyses, external requirements, and prototype
+behavior.
+
+
+2     Objectives and method
+The objective is to select and characterize locally available data for the research prototype. The
+inspection script recursively scanned datasets/ for CSV, Excel, and JSON files, read CSVs
+as UTF-8 with BOM support and detected delimiters, and processed the Excel workbook as
+OOXML. It calculated dimensions, field names, missingness, distinct non-empty values, numeric
+ranges, exact duplicate rows, and selected cross-table key containment checks. All reported
+counts are based on local files and are reproducible from the included script and machine-readable
+artifacts. Numeric-looking codes are not automatically treated as measures. The comparison uses
+qualitative ratings: High means direct, broad field support for the stated prototype task; Medium
+means useful but partial fields or substantial derived logic; Low means a material core capability
+is absent; Unknown means evidence or terms were not verified. For licensing, High indicates
+a verified source license that permits reuse with stated conditions; Medium indicates verified
+terms with meaningful use conditions; Unknown means the license was not verified. These are
+task-relative judgments, not universal dataset rankings.
+
+
+
+
+                                                      1
+3    Local availability and inspection environment
+The local workspace contains nine Olist CSV files (total 126,186,995 bytes; individual byte counts
+are in Table 1) and a 45,622,278-byte workbook at datasets/online_retail_ii/online_
+retail_II.xlsx. The workbook has sheets Year 2009-2010 (525,461 data rows) and Year
+2010-2011 (541,910 data rows). Python 3 is available. Pandas and openpyxl were absent, so the
+included inspector uses the standard library. MiKTeX pdflatex and BibTeX are installed. The
+Excel date values are stored as spreadsheet serials; workbook dates are interpreted as timestamps
+for the date-range statement, while the low-level quality CSV preserves the underlying numeric
+serial range.
+
+        Table 1: Locally observed Olist file inventory. Dimensions exclude header rows.
+                      File                      Rows     Columns       Bytes
+                      customers                 99,441         5    9,033,957
+                      geolocation            1,000,163         5   61,273,883
+                      orders                    99,441         8   17,654,914
+                      order items              112,650         7   15,438,671
+                      order payments           103,886         5    5,777,138
+                      order reviews             99,250         7   14,451,670
+                      products                  32,951         9    2,379,446
+                      sellers                    3,095         4      174,703
+                      category translation          71         2        2,613
+
+
+
+
+4    Olist dataset: structure and empirical findings
+The observed schema consists of customer location records; geolocation; order status/timestamps;
+item-level product, seller, price, and freight; payment method/installments/value; review
+score/comments/timestamps; product dimensions/category; seller location; and a category
+translation table. The files provide a relational view, rather than one flat fact table. The
+order_id and customer_id columns each have 99,441 distinct non-empty values in their re-
+spective 99,441-row tables; product_id has 32,951 distinct values in 32,951 product rows and
+seller_id has 3,095 distinct values in 3,095 seller rows. These candidate keys are unique
+by observed cardinality. The customer table has 96,096 distinct customer_unique_id values,
+showing that this field identifies repeat customer groupings rather than a one-row-per-order key.
+Olist has 99,441 order identifiers and 99,441 customer records. The candidate customer and
+order keys have no duplicate key values, as confirmed by the key-check artifact. The order-item
+table has 112,650 rows, while its 98,666 distinct order IDs are all present in orders. The payment
+table has 99,440 distinct order IDs, all present in orders. The review table has 98,690 distinct
+order IDs; 17 distinct keys do not occur among the order IDs. These checks are calculated
+on observed non-empty identifiers and do not mean that every order has every kind of child
+record. Candidate key checks further show that the composite (order_id, order_item_id) is
+unique across 112,650 item rows and (order_id, payment_sequential) is unique across 103,886
+payment rows; the single order_id field is not unique in those child tables. These duplicate-excess
+and missing-key checks are provided in primary_key_checks.csv. Reviews have no separate
+review identifier in the observed schema, so no review primary key is asserted. Order items
+expose 32,951 distinct product IDs and 3,095 distinct seller IDs, all contained in the products
+and sellers keys respectively.
+    Olist item prices range from 0.85 to 6,735.00 and freight values range from 0.00 to 409.68
+in the source currency (Brazilian real is implied by the Brazilian marketplace context; the
+CSV itself has no explicit currency-code field). Payment values range from 0.00 to 13,664.08.
+
+
+                                                 2
+These are observed extrema, not cleaned or adjudicated accounting values. Observed timestamp
+ranges include order purchase from 2016-09-04 21:15:19 to 2018-10-17 17:30:18; carrier handoff
+from 2016-10-08 10:34:01 to 2018-09-11 19:48:28; customer delivery from 2016-10-11 13:46:32
+to 2018-10-17 13:22:46; estimated delivery from 2016-09-30 to 2018-11-12; review creation from
+2016-10-02 to 2018-08-31; review answer from 2016-10-07 to 2018-10-29; and item shipping limits
+from 2016-09-19 to 2020-04-09. These are observed field ranges, not necessarily order lifecycle
+bounds. The date columns include purchase, approval, carrier handoff, delivery, estimated
+delivery, review creation/answer, and shipping limit. Missing order timestamps include 160
+approval timestamps (0.161%), 1,783 carrier timestamps (1.793%), and 2,965 customer delivery
+timestamps (2.982%). Status and timing must therefore be interpreted with missingness and
+order status in view.
+    The geolocation file has 1,000,163 rows and 261,831 exact duplicate rows. Exact duplicate
+rows are observed as full-row repetition; repeated postal prefixes by themselves are not necessarily
+errors. Product category and descriptive dimensions are incomplete: 610 product category/name-
+length/description-length/photo-count entries are missing (1.851% of 32,951); two products lack
+each of several physical dimensions (0.006%). Review text is especially sparse: 87,680 titles
+(88.343%) and 58,299 messages (58.740%) are empty. Ten review scores and nine review order
+IDs are missing. Percentages use the row count of the corresponding table as denominator. Full
+per-column values are supplied in data_quality_summary.csv.
+
+
+5    Online Retail II: structure and empirical findings
+The workbook has eight fields: Invoice, StockCode, Description, Quantity, InvoiceDate,
+Price, Customer ID, and Country. It contains 1,067,371 data rows across two sheets, with
+12,133 exact duplicate line rows detected in the raw cell values (6,865 and 5,268 by worksheet).
+Negative quantities occur in 22,950 rows (12,326 and 10,624 by sheet), with no zero quantities.
+There are 19,494 rows whose invoice identifier has the documented cancellation prefix (10,206
+and 9,288 by sheet), representing 4,592 and 3,836 distinct cancellation invoice identifiers within
+each worksheet. Zero prices occur in 6,202 rows (3,687 and 2,515), and five rows have negative
+prices (three and two). These counts identify records for contextual review; they are not fraud
+or error determinations. The first sheet has 2,928 missing descriptions (0.557%) and 107,927
+missing customer IDs (20.540%). The second has 1,454 missing descriptions (0.268%) and 135,080
+missing customer IDs (24.927%). Invoice, stock code, quantity, invoice date, unit price, and
+country are populated throughout the inspected rows. A customer identifier therefore cannot be
+assumed for every transaction.
+    The source’s date values span 1 December 2009 to 9 December 2011, consistent with UCI’s
+dataset description. Each worksheet has 8 columns. The first contains 28,816 distinct invoice cell
+values, 4,631 stock-code values, 40 countries, and 4,383 non-empty customer IDs. The second
+contains 25,900 invoice values, 4,070 stock codes, 38 countries, and 4,372 non-empty customer
+IDs. Because invoice identifiers are present in both sheets and the same invoice value might
+recur across partitions, totals across sheets require global recomputation rather than adding
+the sheet-level distinct counts. Quantity ranges are -9,600 to 19,152 (first sheet) and -80,995 to
+80,995 (second). Price ranges include negative and unusually large values: -53,594.36 to 25,111.09
+and -11,062.06 to 38,970.00. These values merit review and are not interpreted as errors without
+source business context. Invoice IDs beginning with C are a documented cancellation marker;
+that is a transaction status convention, not evidence of fraud. Negative quantities may represent
+returns or corrections; zero/negative or very large prices may reflect adjustments, special lines,
+or data-quality issues. The inspection artifacts report raw-value ranges and do not silently filter
+them.
+
+
+
+
+                                                 3
+6    Data quality and schema interpretation
+For CSVs, blank fields were counted as missing. For Excel, blank cells were counted within each
+worksheet. Exact duplicate detection compares complete decoded field values (or workbook cell
+values) and counts repeated rows after their first occurrence. The high geolocation duplicate
+count is salient and should be assessed in a future pipeline using key semantics and source
+documentation, not automatically removed. Identifiers must be handled as strings even where
+they contain digits; quantity and price are numeric measures, while invoice dates require proper
+spreadsheet date decoding. The included quality file provides missing count and percent, distinct
+count, and numeric extrema by field. Date values stored as Excel serials are not misreported as
+calendar timestamps in that raw extrema table.
+
+
+7    Dataset comparison
+Table 2 applies the defined qualitative scale. Reproducibility is High for both in this workspace
+because the original files are present and all analyses use local inputs. Licensing is evaluated
+separately from local accessibility. Ratings reflect the intended multi-agent prototype, not dataset
+merit in general.
+
+
+8    Agent-to-dataset suitability
+Capabilities are marked as direct (source columns), derived (computed from columns), external
+(requires data not present), or prototype (must be implemented as agent/rule behavior). The
+table describes an achievable prototype scope, not native automation embedded in either dataset.
+
+                      Table 3: Agent suitability and implementation boundary.
+
+ Agent            Olist        Online       Available         Missing           Proposed
+                               Retail II    evidence          information       implementation
+ Orchestrator     Prototype / Prototype / Transaction rows No agent events Simulate agent
+                  Medium      Low         can be replayed    or coordination messages, state
+                                          through task       trace            transitions, and
+                                          workflows                           policy gates.
+ E-Commerce       Direct /    Direct /    Olist orders,      Retail II lacks  Separate order and
+                  High        High        status, customers, payment method invoice scenarios in
+                                          and payments;      and order        adapters.
+                                          Retail II invoices lifecycle status
+                                          and product-line
+                                          fields
+ Inventory        Derived /   Derived /   Olist item         External: stock Derive sales/return
+                  Medium      Medium      quantities and     on hand,         signals; simulate
+                                          product IDs;       receipts,        inventory balances
+                                          Retail II          transfers, full  with declared
+                                          quantities and     returns          assumptions.
+                                          stock codes
+ Accounting       Derived /   Derived /   Olist item prices, External: tax,   Reconcile
+                  Medium      Medium      freight, and       settlement,      transaction
+                                          payment values; currency            evidence; label all
+                                          Retail II quantity metadata, chart totals as
+                                          and unit price     of accounts,     analytical, not
+                                                             ledger           ledger postings.
+
+
+
+
+                                                 4
+ Agent           Olist        Online       Available           Missing         Proposed
+                              Retail II    evidence            information     implementation
+ Risk and        Derived /    Derived /    Amount, status,  External:          Apply transparent
+ Anomaly         Medium       Medium       timing, quantity,adjudicated        anomaly rules;
+ Detection                                 identifier       fraud labels and   report flags for
+                                           consistency      contextual risk    review, not fraud
+                                                            features           determinations.
+ Governance      Prototype / Prototype / Fields support     External:          Version rules as
+                 Medium      Medium      explicit threshold organizational     prototype
+                                         and completeness policies,            configuration and
+                                         checks             approvals,         log outcomes.
+                                                            retention/access
+                                                            rules
+ Audit           Derived /   Derived /   Stable source IDs No native           Preserve source
+                 Medium      Medium      and repeatable     chain-of-custody   keys, validation
+                                         table-level        or agent action    outputs, and run
+                                         validation         log                metadata.
+
+
+
+9    Independent adapters and canonical schema
+The datasets must remain logically independent. The primary design is one adapter per source,
+producing a shared event interface without joining records. A minimal canonical event may
+contain source_dataset, source_record_key, event_kind, event_date, item_key, quantity,
+unit_amount, and currency_code. source_dataset and source keys are mandatory lineage.
+Olist can map order_id to an order event, order_item_id to a line key, product_id to an item
+key, price and freight_value to separate amounts, and payment values to payment events.
+The currency code is not present and must be configured or left unavailable. Retail II maps
+invoice, stock code, quantity, invoice date, and unit price; invoice cancellation status can be
+derived from the documented C prefix. Customer IDs are optional. A canonical customer key
+remains source-scoped. Missing values are represented as null with an explicit Not available
+in source dataset explanation, never fabricated.
+    A second, optional layer can normalize event/line concepts and aggregation units for com-
+parative experiments. It is schema normalization only. The numeric order/invoice IDs, product
+codes, customer identifiers, countries, and date semantics are source-specific and must never be
+treated as common business identities. Any mapping beyond the direct field correspondences
+above requires an explicit versioned assumption.
+
+
+10    Accounting and inventory boundaries
+Olist contains item prices, freight amounts, payment values, payment methods, and installment
+counts. This supports candidate transaction-level summaries and consistency checks, but rows
+are not a complete double-entry general ledger: there is no verified account mapping, tax/fee
+structure, settlement statement, or general-ledger posting history. Retail II offers quantity and
+unit price for invoice lines but does not provide payment/settlement data or explicit currency
+code; UCI documents its unit prices in sterling. Neither dataset tracks stock-on-hand over time,
+receipts, transfers, reservations, or a complete return-to-stock process. Inventory balances must
+therefore be simulated or supplied from an external inventory source.
+
+
+
+
+                                                5
+                Table 2: Qualitative comparison against the prototype objectives.
+ Criterion                Olist           Online Retail    Evidence and qualification
+                                          II
+ Research/workflow        High            High             Both contain real transaction records;
+ relevance                                                 Olist spans more linked workflow
+                                                           entities, while Retail II offers a longer
+                                                           line-level series.
+ E-commerce coverage      High            Medium           Olist includes orders, status, customers,
+                                                           items, payments, sellers, and reviews;
+                                                           Retail II contains invoices and product
+                                                           lines.
+ Inventory evidence       Medium          Low              Both support item/product quantity
+                                                           analysis; neither contains historical
+                                                           on-hand stock or full movement ledgers.
+ Accounting evidence      Medium          Medium           Item amounts, freight (Olist), unit
+                                                           prices (Retail II), and payment records
+                                                           (Olist) support reconciliations; neither is
+                                                           a general ledger.
+ Risk/anomaly analysis    Medium          Medium           Both permit rule-based outlier and
+                                                           consistency checks; neither has verified
+                                                           fraud labels.
+ Governance/audit         Medium          Medium           Reproducible rules and traceable rows
+ support                                                   can be built; policies and agent decisions
+                                                           must come from prototype configuration.
+ Data                     Medium          Medium           Both have meaningful missingness and
+ quality/completeness                                      unusual values; Olist geolocation has
+                                                           many exact duplicate rows and Retail II
+                                                           has missing customer IDs and repeated
+                                                           lines.
+ Integration effort       Medium          Medium           Requires two adapters and
+                                                           source-specific semantics; there is no
+                                                           safe record-level cross-source join.
+ Local reproducibility    High            High             Nine Olist CSVs and the workbook are
+                                                           present and inventoried.
+ License/redistribution   Unknown         High             UCI record states CC BY 4.0 and
+                                                           requires attribution. Olist primary
+                                                           Kaggle listing was verified, but its
+                                                           license terms were not independently
+                                                           confirmed from the accessible data card.
+
+
+11     Risk, governance, audit, and coordination limits
+Unusual amounts, negative quantities, cancellations, missing identifiers, and referential anomalies
+can trigger review rules. A flagged row is not a confirmed fraud case. Neither inspected schema
+provides a verified fraud outcome label. Governance policies (thresholds, approval authority,
+segregation of duties, privacy retention) are not source data and must be explicitly defined and
+versioned by the prototype. Auditability can be implemented through repeatable source-key
+checks, immutable input manifests, run identifiers, and agent decision logs; these capabilities
+are not automatically present in the files. Orchestration behavior is entirely prototype logic.
+Historical data can drive deterministic replays, but it cannot evidence autonomous coordination
+unless the prototype emits and evaluates its own traces.
+
+
+
+
+                                                 6
+12     Provenance, licensing, and usage
+The Olist listing on Kaggle identifies the dataset title/provider, describes approximately 100,000
+orders, and lists nine CSV files [2]. Its current license terms were not independently confirmed from
+the accessible primary data card during this inspection; verify those terms before redistributing
+data or derived artifacts that reproduce source content. Secondary source claims about a specific
+Olist license are not treated as a verified permission here. UCI identifies Online Retail II as
+a dataset by Daqing Chen, describes its two-year transaction scope, provides the workbook,
+DOI, and states CC BY 4.0 [1]. Attribution is required under that license. This report does
+not provide legal advice; users should retain dataset attribution and check current terms before
+redistribution.
+
+
+13     Recommended prototype configuration
+Use Olist as the primary end-to-end workflow fixture because its local relational tables jointly cover
+order status, customers, order lines, payments, products, sellers, and reviews. Use Online Retail
+II as an independent transaction-line replay fixture for quantity/price patterns, cancellations,
+and return-like observations. Operate each through a source-specific adapter and shared, source-
+scoped event interface. Implement inventory balances, accounting ledgers, governance policy
+checks, risk thresholds, audit trails, and orchestration as explicit prototype modules; label
+simulated outputs. Preserve raw inputs and document each derived metric and exclusion.
+
+
+14     Threats to validity and limitations
+The inspected files may not represent the provider’s latest release. Field typing is a heuristic, and
+source semantics can exceed what column names establish. Exact duplicate counts depend on
+decoded cell representation; duplicates are not automatically erroneous. The distinct-key joins
+test membership, not row-level referential integrity in every direction, cardinality constraints,
+temporal validity, or business completeness. Excel serial timestamps require workbook date-
+format interpretation. License verification is stronger for the UCI file than for Olist. Qualitative
+ratings depend on prototype objectives and should be revisited if the required task changes. No
+cross-source business identity is established.
+
+
+15     Conclusion
+Both local datasets are usable for governed multi-agent workflow prototyping when their evidence
+boundaries are respected. Olist provides the broader relational workflow context, while Online
+Retail II contributes a larger two-year line-level invoice history. A dual-adapter configuration
+preserves each source’s semantics and supports controlled comparative replays without asserting
+false equivalence. Neither source supplies the stock history, complete accounting records, explicit
+governance rules, confirmed fraud labels, or agent coordination needed to claim production
+autonomy; these must be externally provided or explicitly simulated and audited.
+
+
+References
+[1] Daqing Chen. Online retail ii. https://archive.ics.uci.edu/dataset/502/online+
+    retail+ii, 2012. UCI repository record; CC BY 4.0 stated on the official record.
+[2] Olist. Brazilian e-commerce public dataset by olist. https://www.kaggle.com/datasets/
+    olistbr/brazilian-ecommerce. Kaggle listing; release and license metadata not indepen-
+    dently verified.
+
+
+                                                  7
+

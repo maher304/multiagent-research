@@ -1,0 +1,289 @@
+% ===========================================================================
+% Bibliography for Code_Report.tex
+%
+% This file reuses the dataset and governance/multi-agent references already
+% present in the sibling reports (reports/dataset_report/references.bib and
+% reports/Agents reports/references.bib) and adds entries for the software
+% libraries that the implemented code actually imports. No entry describes a
+% library that is not used, and no citation is invented.
+%
+% Titles are enclosed in double braces (title = {{...}}) so that BibTeX's
+% "change.case$" pass does not re-case them; this keeps product and proper
+% names (NumPy, Sarbanes--Oxley, ISO/IEC 42001, Online Retail II, ...) intact.
+% ===========================================================================
+
+% --------------------------- Datasets --------------------------------------
+@misc{olistDataset,
+  author       = {{Olist}},
+  title        = {{Brazilian E-Commerce Public Dataset by Olist}},
+  year         = {2018},
+  publisher    = {Kaggle},
+  howpublished = {Online dataset},
+  url          = {https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce},
+  note         = {Nine relational CSV files; licence as stated on the Kaggle data card; accessed via local copy}
+}
+
+@misc{chen2012,
+  author       = {Chen, Daqing},
+  title        = {{Online Retail II}},
+  year         = {2012},
+  publisher    = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5CG6D},
+  url          = {https://archive.ics.uci.edu/dataset/502/online+retail+ii},
+  note         = {Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0); 1{,}067{,}371 instances}
+}
+
+% --------------------- Software used by the codebase -----------------------
+@misc{pythonDocs,
+  author       = {{Python Software Foundation}},
+  title        = {{The Python Language Reference, version 3.10}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://docs.python.org/3/},
+  note         = {CPython 3.10.11 was the interpreter observed in the analysis environment}
+}
+
+@inproceedings{mckinney2010,
+  author    = {McKinney, Wes},
+  title     = {{Data Structures for Statistical Computing in Python}},
+  booktitle = {Proceedings of the 9th Python in Science Conference},
+  pages     = {56--61},
+  year      = {2010},
+  doi       = {10.25080/Majora-92bf1922-00a},
+  note      = {Reference publication for the pandas library}
+}
+
+@misc{pandasDocs,
+  author       = {{The pandas development team}},
+  title        = {{pandas: powerful Python data analysis toolkit --- Documentation}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://pandas.pydata.org/docs/},
+  note         = {Version 2.3.3 was installed in the inspected environment; \texttt{read\_csv}, \texttt{read\_excel}, \texttt{to\_datetime} and \texttt{to\_numeric} are used by the analysis package}
+}
+
+@article{harris2020numpy,
+  author  = {Harris, Charles R. and Millman, K. Jarrod and van der Walt, St{\'e}fan J. and others},
+  title   = {{Array programming with {NumPy}}},
+  journal = {Nature},
+  volume  = {585},
+  number  = {7825},
+  pages   = {357--362},
+  year    = {2020},
+  doi     = {10.1038/s41586-020-2649-2}
+}
+
+@misc{numpyDocs,
+  author       = {{NumPy Developers}},
+  title        = {{NumPy Reference --- Documentation}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://numpy.org/doc/stable/}
+}
+
+@article{hunter2007matplotlib,
+  author  = {Hunter, John D.},
+  title   = {{Matplotlib: A 2D Graphics Environment}},
+  journal = {Computing in Science \& Engineering},
+  volume  = {9},
+  number  = {3},
+  pages   = {90--95},
+  year    = {2007},
+  doi     = {10.1109/MCSE.2007.55}
+}
+
+@misc{matplotlibDocs,
+  author       = {{Matplotlib Development Team}},
+  title        = {{Matplotlib Documentation}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://matplotlib.org/stable/}
+}
+
+@article{waskom2021seaborn,
+  author  = {Waskom, Michael L.},
+  title   = {{seaborn: statistical data visualization}},
+  journal = {Journal of Open Source Software},
+  volume  = {6},
+  number  = {60},
+  pages   = {3021},
+  year    = {2021},
+  doi     = {10.21105/joss.03021}
+}
+
+@misc{seabornDocs,
+  author       = {Waskom, Michael L.},
+  title        = {{seaborn: statistical data visualization --- Documentation}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://seaborn.pydata.org/}
+}
+
+@misc{openpyxlDocs,
+  author       = {Gazoni, Eric and Clark, Charlie},
+  title        = {{openpyxl - A Python library to read/write Excel 2010 xlsx/xlsm files}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://openpyxl.readthedocs.io/},
+  note         = {Used as the \texttt{engine="openpyxl"} backend for \texttt{pandas.read\_excel} in \texttt{online\_retail.load\_sheets()}}
+}
+
+@misc{pytestDocs,
+  author       = {{pytest development team}},
+  title        = {{pytest: helps you write better programs --- Documentation}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://docs.pytest.org/},
+  note         = {Version 9.1.0 was used to execute the 13 unit tests of the analysis package}
+}
+
+@misc{miktexDocs,
+  author       = {{MiKTeX Project}},
+  title        = {{MiKTeX: a free cross-platform {\LaTeX} distribution}},
+  year         = {2024},
+  howpublished = {Online documentation},
+  url          = {https://miktex.org/},
+  note         = {MiKTeX-pdfTeX 4.18 (MiKTeX 24.1) with BibTeX 4.1 was used to compile this report and its sibling reports}
+}
+
+% ---------------------- Multi-agent systems and agents ---------------------
+@book{wooldridge2009,
+  author    = {Wooldridge, Michael},
+  title     = {An Introduction to MultiAgent Systems},
+  edition   = {2},
+  year      = {2009},
+  publisher = {John Wiley \& Sons},
+  address   = {Chichester, UK},
+  isbn      = {978-0-470-51946-2}
+}
+
+@book{shoham2009,
+  author    = {Shoham, Yoav and Leyton-Brown, Kevin},
+  title     = {Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations},
+  year      = {2009},
+  publisher = {Cambridge University Press},
+  address   = {New York, USA},
+  isbn      = {978-0-521-89943-7},
+  doi       = {10.1017/CBO9780511811654}
+}
+
+@book{russellNorvig2021,
+  author    = {Russell, Stuart and Norvig, Peter},
+  title     = {Artificial Intelligence: A Modern Approach},
+  edition   = {4},
+  year      = {2021},
+  publisher = {Pearson},
+  address   = {Hoboken, NJ, USA},
+  isbn      = {978-0-13-461099-3}
+}
+
+% ---------------------- Data quality, anomaly detection --------------------
+@article{chandola2009,
+  author    = {Chandola, Varun and Banerjee, Arindam and Kumar, Vipin},
+  title     = {{Anomaly Detection: A Survey}},
+  journal   = {ACM Computing Surveys},
+  volume    = {41},
+  number    = {3},
+  articleno = {15},
+  pages     = {1--58},
+  year      = {2009},
+  doi       = {10.1145/1541880.1541882}
+}
+
+@article{ngai2011,
+  author  = {Ngai, Eric W. T. and Hu, Yong and Wong, Y. H. and Chen, Yijun and Sun, Xin},
+  title   = {{The application of data mining techniques in financial fraud detection: A classification framework and an academic review of literature}},
+  journal = {Decision Support Systems},
+  volume  = {50},
+  number  = {3},
+  pages   = {559--569},
+  year    = {2011},
+  doi     = {10.1016/j.dss.2010.08.006}
+}
+
+@article{batini2009,
+  author  = {Batini, Carlo and Cappiello, Cinzia and Francalanci, Chiara and Maurino, Andrea},
+  title   = {{Methodologies for Data Quality Assessment and Improvement}},
+  journal = {ACM Computing Surveys},
+  volume  = {41},
+  number  = {3},
+  articleno = {16},
+  pages   = {1--52},
+  year    = {2009},
+  doi     = {10.1145/1541880.1541883}
+}
+
+@article{wilkinson2016,
+  author  = {Wilkinson, Mark D. and Dumontier, Michel and Aalbersberg, IJsbrand Jan and others},
+  title   = {{The {FAIR} Guiding Principles for Scientific Data Management and Stewardship}},
+  journal = {Scientific Data},
+  volume  = {3},
+  pages   = {160018},
+  year    = {2016},
+  doi     = {10.1038/sdata.2016.18}
+}
+
+@article{hevner2004,
+  author  = {Hevner, Alan R. and March, Salvatore T. and Park, Jinsoo and Ram, Sudha},
+  title   = {{Design Science in Information Systems Research}},
+  journal = {MIS Quarterly},
+  volume  = {28},
+  number  = {1},
+  pages   = {75--105},
+  year    = {2004},
+  doi     = {10.2307/25148625}
+}
+
+% ---------------------- Governance, risk and compliance --------------------
+@techreport{nistAirmf2023,
+  author      = {Tabassi, Elham},
+  title       = {{Artificial Intelligence Risk Management Framework ({AI RMF} 1.0)}},
+  institution = {National Institute of Standards and Technology},
+  number      = {NIST AI 100-1},
+  year        = {2023},
+  doi         = {10.6028/NIST.AI.100-1},
+  url         = {https://doi.org/10.6028/NIST.AI.100-1}
+}
+
+@techreport{nistAi6001,
+  author      = {Autio, Chloe and Schwartz, Reva and Dunietz, Jesse and Jain, Shomik and Stanley, Martin and Tabassi, Elham and Hall, Patrick and Roberts, Kamie},
+  title       = {{Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile}},
+  institution = {National Institute of Standards and Technology},
+  number      = {NIST AI 600-1},
+  year        = {2024},
+  doi         = {10.6028/NIST.AI.600-1},
+  url         = {https://doi.org/10.6028/NIST.AI.600-1}
+}
+
+@misc{iso42001,
+  author       = {{International Organization for Standardization and International Electrotechnical Commission}},
+  title        = {{ISO/IEC 42001:2023 Information Technology --- Artificial Intelligence --- Management System}},
+  year         = {2023},
+  howpublished = {International Standard, Edition 1},
+  url          = {https://www.iso.org/standard/81230.html},
+  note         = {Published 2023-12; prepared by ISO/IEC JTC 1/SC 42}
+}
+
+@misc{coso2013,
+  author       = {{Committee of Sponsoring Organizations of the Treadway Commission (COSO)}},
+  title        = {{Internal Control --- Integrated Framework}},
+  year         = {2013},
+  howpublished = {Framework},
+  url          = {https://www.coso.org/}
+}
+
+@misc{sox2002,
+  author       = {{United States Congress}},
+  title        = {{Sarbanes--Oxley Act of 2002}},
+  year         = {2002},
+  howpublished = {Public Law 107--204, 116 Stat. 745},
+  url          = {https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf}
+}
+
+@misc{gdpr2016,
+  author       = {{European Parliament and Council of the European Union}},
+  title        = {{Regulation ({EU}) 2016/679 on the Protection of Natural Persons with Regard to the Processing of Personal Data (General Data Protection Regulation)}},
+  year         = {2016},
+  howpublished = {Official Journal of the European Union, L 119},
+  url          = {https://eur-lex.europa.eu/eli/reg/2016/679/oj}
+}

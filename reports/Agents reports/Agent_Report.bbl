@@ -1,0 +1,69 @@
+\begin{thebibliography}{10}
+
+\bibitem{nistAi6001}
+Chloe Autio, Reva Schwartz, Jesse Dunietz, Shomik Jain, Martin Stanley, Elham
+  Tabassi, Patrick Hall, and Kamie Roberts.
+\newblock Artificial intelligence risk management framework: Generative
+  artificial intelligence profile.
+\newblock Technical Report NIST AI 600-1, National Institute of Standards and
+  Technology, 2024.
+
+\bibitem{chandola2009}
+Varun Chandola, Arindam Banerjee, and Vipin Kumar.
+\newblock Anomaly detection: A survey.
+\newblock {\em ACM Computing Surveys}, 41(3):1--58, 2009.
+
+\bibitem{coso2013}
+{Committee of Sponsoring Organizations of the Treadway Commission (COSO)}.
+\newblock Internal control --- integrated framework.
+\newblock Framework, 2013.
+
+\bibitem{gdpr2016}
+{European Parliament and Council of the European Union}.
+\newblock Regulation ({EU}) 2016/679 on the protection of natural persons with
+  regard to the processing of personal data (general data protection
+  regulation).
+\newblock Official Journal of the European Union, L 119, 2016.
+
+\bibitem{hevner2004}
+Alan~R. Hevner, Salvatore~T. March, Jinsoo Park, and Sudha Ram.
+\newblock Design science in information systems research.
+\newblock {\em MIS Quarterly}, 28(1):75--105, 2004.
+
+\bibitem{iso42001}
+{International Organization for Standardization and International
+  Electrotechnical Commission}.
+\newblock {ISO/IEC 42001:2023} information technology --- artificial
+  intelligence --- management system.
+\newblock International Standard, Edition 1, 2023.
+\newblock Published 2023-12; prepared by ISO/IEC JTC 1/SC 42.
+
+\bibitem{ngai2011}
+Eric W.~T. Ngai, Yong Hu, Y.~H. Wong, Yijun Chen, and Xin Sun.
+\newblock The application of data mining techniques in financial fraud
+  detection: A classification framework and an academic review of literature.
+\newblock {\em Decision Support Systems}, 50(3):559--569, 2011.
+
+\bibitem{shoham2009}
+Yoav Shoham and Kevin Leyton-Brown.
+\newblock {\em Multiagent Systems: Algorithmic, Game-Theoretic, and Logical
+  Foundations}.
+\newblock Cambridge University Press, New York, USA, 2009.
+
+\bibitem{nistAirmf2023}
+Elham Tabassi.
+\newblock Artificial intelligence risk management framework ({AI RMF} 1.0).
+\newblock Technical Report NIST AI 100-1, National Institute of Standards and
+  Technology, 2023.
+
+\bibitem{sox2002}
+{United States Congress}.
+\newblock Sarbanes--oxley act of 2002.
+\newblock Public Law 107--204, 116 Stat. 745, 2002.
+
+\bibitem{wooldridge2009}
+Michael Wooldridge.
+\newblock {\em An Introduction to MultiAgent Systems}.
+\newblock John Wiley \& Sons, Chichester, UK, 2 edition, 2009.
+
+\end{thebibliography}

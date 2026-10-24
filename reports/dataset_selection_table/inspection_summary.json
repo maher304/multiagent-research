@@ -1,0 +1,1717 @@
+{
+  "project_root": "C:\\Users\\pc\\MultiAgentAI-Research",
+  "datasets": {
+    "olist": {
+      "files": [
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_customers_dataset.csv",
+          "filename": "olist_customers_dataset.csv",
+          "format": "csv",
+          "bytes": 9033957,
+          "sheets": [],
+          "rows": 99441,
+          "columns": 5,
+          "column_names": [
+            "customer_id",
+            "customer_unique_id",
+            "customer_zip_code_prefix",
+            "customer_city",
+            "customer_state"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 99441,
+            "parsed_records": 99441,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_geolocation_dataset.csv",
+          "filename": "olist_geolocation_dataset.csv",
+          "format": "csv",
+          "bytes": 61273883,
+          "sheets": [],
+          "rows": 1000163,
+          "columns": 5,
+          "column_names": [
+            "geolocation_zip_code_prefix",
+            "geolocation_lat",
+            "geolocation_lng",
+            "geolocation_city",
+            "geolocation_state"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 261831,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 1000163,
+            "parsed_records": 1000163,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_order_items_dataset.csv",
+          "filename": "olist_order_items_dataset.csv",
+          "format": "csv",
+          "bytes": 15438671,
+          "sheets": [],
+          "rows": 112650,
+          "columns": 7,
+          "column_names": [
+            "order_id",
+            "order_item_id",
+            "product_id",
+            "seller_id",
+            "shipping_limit_date",
+            "price",
+            "freight_value"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 112650,
+            "parsed_records": 112650,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_order_payments_dataset.csv",
+          "filename": "olist_order_payments_dataset.csv",
+          "format": "csv",
+          "bytes": 5777138,
+          "sheets": [],
+          "rows": 103886,
+          "columns": 5,
+          "column_names": [
+            "order_id",
+            "payment_sequential",
+            "payment_type",
+            "payment_installments",
+            "payment_value"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 103886,
+            "parsed_records": 103886,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_order_reviews_dataset.csv",
+          "filename": "olist_order_reviews_dataset.csv",
+          "format": "csv",
+          "bytes": 14451670,
+          "sheets": [],
+          "rows": 99224,
+          "columns": 7,
+          "column_names": [
+            "review_id",
+            "order_id",
+            "review_score",
+            "review_comment_title",
+            "review_comment_message",
+            "review_creation_date",
+            "review_answer_timestamp"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 99224,
+            "parsed_records": 99224,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_orders_dataset.csv",
+          "filename": "olist_orders_dataset.csv",
+          "format": "csv",
+          "bytes": 17654914,
+          "sheets": [],
+          "rows": 99441,
+          "columns": 8,
+          "column_names": [
+            "order_id",
+            "customer_id",
+            "order_status",
+            "order_purchase_timestamp",
+            "order_approved_at",
+            "order_delivered_carrier_date",
+            "order_delivered_customer_date",
+            "order_estimated_delivery_date"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 99441,
+            "parsed_records": 99441,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_products_dataset.csv",
+          "filename": "olist_products_dataset.csv",
+          "format": "csv",
+          "bytes": 2379446,
+          "sheets": [],
+          "rows": 32951,
+          "columns": 9,
+          "column_names": [
+            "product_id",
+            "product_category_name",
+            "product_name_lenght",
+            "product_description_lenght",
+            "product_photos_qty",
+            "product_weight_g",
+            "product_length_cm",
+            "product_height_cm",
+            "product_width_cm"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 32951,
+            "parsed_records": 32951,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\olist_sellers_dataset.csv",
+          "filename": "olist_sellers_dataset.csv",
+          "format": "csv",
+          "bytes": 174703,
+          "sheets": [],
+          "rows": 3095,
+          "columns": 4,
+          "column_names": [
+            "seller_id",
+            "seller_zip_code_prefix",
+            "seller_city",
+            "seller_state"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 3095,
+            "parsed_records": 3095,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        },
+        {
+          "dataset": "olist",
+          "path": "datasets\\olist\\product_category_name_translation.csv",
+          "filename": "product_category_name_translation.csv",
+          "format": "csv",
+          "bytes": 2613,
+          "sheets": [],
+          "rows": 71,
+          "columns": 2,
+          "column_names": [
+            "product_category_name",
+            "product_category_name_english"
+          ],
+          "delimiter": "','",
+          "duplicate_rows": 0,
+          "encoding": "utf-8-sig (decoded)",
+          "parse": {
+            "delimiter": "','",
+            "doublequote": true,
+            "raw_records": 71,
+            "parsed_records": 71,
+            "rejected_records": 0,
+            "rejected_examples": []
+          }
+        }
+      ],
+      "available": true
+    },
+    "online_retail_ii": {
+      "files": [
+        {
+          "dataset": "online_retail_ii",
+          "path": "datasets\\online_retail_ii\\online_retail_II.xlsx",
+          "filename": "online_retail_II.xlsx",
+          "format": "xlsx",
+          "bytes": 45622278,
+          "sheets": [
+            {
+              "name": "Year 2009-2010",
+              "rows": 525461,
+              "columns": 8,
+              "column_names": [
+                "Invoice",
+                "StockCode",
+                "Description",
+                "Quantity",
+                "InvoiceDate",
+                "Price",
+                "Customer ID",
+                "Country"
+              ],
+              "duplicate_rows": 6865
+            },
+            {
+              "name": "Year 2010-2011",
+              "rows": 541910,
+              "columns": 8,
+              "column_names": [
+                "Invoice",
+                "StockCode",
+                "Description",
+                "Quantity",
+                "InvoiceDate",
+                "Price",
+                "Customer ID",
+                "Country"
+              ],
+              "duplicate_rows": 5268
+            }
+          ],
+          "rows": 1067371,
+          "columns": 8,
+          "column_names": [
+            "Invoice",
+            "StockCode",
+            "Description",
+            "Quantity",
+            "InvoiceDate",
+            "Price",
+            "Customer ID",
+            "Country"
+          ],
+          "duplicate_rows": 12133,
+          "encoding": "OOXML/UTF-8",
+          "delimiter": "not applicable"
+        }
+      ],
+      "available": true
+    }
+  },
+  "limitations": [
+    "Standard-library XLSX reader; formula cells are not evaluated.",
+    "Field type inference is value-based and descriptive, not a formal schema."
+  ],
+  "files": [
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_customers_dataset.csv",
+      "filename": "olist_customers_dataset.csv",
+      "format": "csv",
+      "bytes": 9033957,
+      "sheets": [],
+      "rows": 99441,
+      "columns": 5,
+      "column_names": [
+        "customer_id",
+        "customer_unique_id",
+        "customer_zip_code_prefix",
+        "customer_city",
+        "customer_state"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 99441,
+        "parsed_records": 99441,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_geolocation_dataset.csv",
+      "filename": "olist_geolocation_dataset.csv",
+      "format": "csv",
+      "bytes": 61273883,
+      "sheets": [],
+      "rows": 1000163,
+      "columns": 5,
+      "column_names": [
+        "geolocation_zip_code_prefix",
+        "geolocation_lat",
+        "geolocation_lng",
+        "geolocation_city",
+        "geolocation_state"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 261831,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 1000163,
+        "parsed_records": 1000163,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_order_items_dataset.csv",
+      "filename": "olist_order_items_dataset.csv",
+      "format": "csv",
+      "bytes": 15438671,
+      "sheets": [],
+      "rows": 112650,
+      "columns": 7,
+      "column_names": [
+        "order_id",
+        "order_item_id",
+        "product_id",
+        "seller_id",
+        "shipping_limit_date",
+        "price",
+        "freight_value"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 112650,
+        "parsed_records": 112650,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_order_payments_dataset.csv",
+      "filename": "olist_order_payments_dataset.csv",
+      "format": "csv",
+      "bytes": 5777138,
+      "sheets": [],
+      "rows": 103886,
+      "columns": 5,
+      "column_names": [
+        "order_id",
+        "payment_sequential",
+        "payment_type",
+        "payment_installments",
+        "payment_value"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 103886,
+        "parsed_records": 103886,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_order_reviews_dataset.csv",
+      "filename": "olist_order_reviews_dataset.csv",
+      "format": "csv",
+      "bytes": 14451670,
+      "sheets": [],
+      "rows": 99224,
+      "columns": 7,
+      "column_names": [
+        "review_id",
+        "order_id",
+        "review_score",
+        "review_comment_title",
+        "review_comment_message",
+        "review_creation_date",
+        "review_answer_timestamp"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 99224,
+        "parsed_records": 99224,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_orders_dataset.csv",
+      "filename": "olist_orders_dataset.csv",
+      "format": "csv",
+      "bytes": 17654914,
+      "sheets": [],
+      "rows": 99441,
+      "columns": 8,
+      "column_names": [
+        "order_id",
+        "customer_id",
+        "order_status",
+        "order_purchase_timestamp",
+        "order_approved_at",
+        "order_delivered_carrier_date",
+        "order_delivered_customer_date",
+        "order_estimated_delivery_date"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 99441,
+        "parsed_records": 99441,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_products_dataset.csv",
+      "filename": "olist_products_dataset.csv",
+      "format": "csv",
+      "bytes": 2379446,
+      "sheets": [],
+      "rows": 32951,
+      "columns": 9,
+      "column_names": [
+        "product_id",
+        "product_category_name",
+        "product_name_lenght",
+        "product_description_lenght",
+        "product_photos_qty",
+        "product_weight_g",
+        "product_length_cm",
+        "product_height_cm",
+        "product_width_cm"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 32951,
+        "parsed_records": 32951,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\olist_sellers_dataset.csv",
+      "filename": "olist_sellers_dataset.csv",
+      "format": "csv",
+      "bytes": 174703,
+      "sheets": [],
+      "rows": 3095,
+      "columns": 4,
+      "column_names": [
+        "seller_id",
+        "seller_zip_code_prefix",
+        "seller_city",
+        "seller_state"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 3095,
+        "parsed_records": 3095,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "olist",
+      "path": "datasets\\olist\\product_category_name_translation.csv",
+      "filename": "product_category_name_translation.csv",
+      "format": "csv",
+      "bytes": 2613,
+      "sheets": [],
+      "rows": 71,
+      "columns": 2,
+      "column_names": [
+        "product_category_name",
+        "product_category_name_english"
+      ],
+      "delimiter": "','",
+      "duplicate_rows": 0,
+      "encoding": "utf-8-sig (decoded)",
+      "parse": {
+        "delimiter": "','",
+        "doublequote": true,
+        "raw_records": 71,
+        "parsed_records": 71,
+        "rejected_records": 0,
+        "rejected_examples": []
+      }
+    },
+    {
+      "dataset": "online_retail_ii",
+      "path": "datasets\\online_retail_ii\\online_retail_II.xlsx",
+      "filename": "online_retail_II.xlsx",
+      "format": "xlsx",
+      "bytes": 45622278,
+      "sheets": [
+        {
+          "name": "Year 2009-2010",
+          "rows": 525461,
+          "columns": 8,
+          "column_names": [
+            "Invoice",
+            "StockCode",
+            "Description",
+            "Quantity",
+            "InvoiceDate",
+            "Price",
+            "Customer ID",
+            "Country"
+          ],
+          "duplicate_rows": 6865
+        },
+        {
+          "name": "Year 2010-2011",
+          "rows": 541910,
+          "columns": 8,
+          "column_names": [
+            "Invoice",
+            "StockCode",
+            "Description",
+            "Quantity",
+            "InvoiceDate",
+            "Price",
+            "Customer ID",
+            "Country"
+          ],
+          "duplicate_rows": 5268
+        }
+      ],
+      "rows": 1067371,
+      "columns": 8,
+      "column_names": [
+        "Invoice",
+        "StockCode",
+        "Description",
+        "Quantity",
+        "InvoiceDate",
+        "Price",
+        "Customer ID",
+        "Country"
+      ],
+      "duplicate_rows": 12133,
+      "encoding": "OOXML/UTF-8",
+      "delimiter": "not applicable"
+    }
+  ],
+  "olist_relationship_checks": [
+    {
+      "child_file": "olist_order_items_dataset.csv",
+      "child_key": "order_id",
+      "parent_file": "olist_orders_dataset.csv",
+      "parent_key": "order_id",
+      "distinct_child_keys": 98666,
+      "distinct_parent_keys": 99441,
+      "unmatched_distinct_child_keys": 0,
+      "relationship": "observed key containment; does not prove semantic completeness"
+    },
+    {
+      "child_file": "olist_order_payments_dataset.csv",
+      "child_key": "order_id",
+      "parent_file": "olist_orders_dataset.csv",
+      "parent_key": "order_id",
+      "distinct_child_keys": 99440,
+      "distinct_parent_keys": 99441,
+      "unmatched_distinct_child_keys": 0,
+      "relationship": "observed key containment; does not prove semantic completeness"
+    },
+    {
+      "child_file": "olist_order_reviews_dataset.csv",
+      "child_key": "order_id",
+      "parent_file": "olist_orders_dataset.csv",
+      "parent_key": "order_id",
+      "distinct_child_keys": 98673,
+      "distinct_parent_keys": 99441,
+      "unmatched_distinct_child_keys": 0,
+      "relationship": "observed key containment; does not prove semantic completeness"
+    },
+    {
+      "child_file": "olist_orders_dataset.csv",
+      "child_key": "customer_id",
+      "parent_file": "olist_customers_dataset.csv",
+      "parent_key": "customer_id",
+      "distinct_child_keys": 99441,
+      "distinct_parent_keys": 99441,
+      "unmatched_distinct_child_keys": 0,
+      "relationship": "observed key containment; does not prove semantic completeness"
+    },
+    {
+      "child_file": "olist_order_items_dataset.csv",
+      "child_key": "product_id",
+      "parent_file": "olist_products_dataset.csv",
+      "parent_key": "product_id",
+      "distinct_child_keys": 32951,
+      "distinct_parent_keys": 32951,
+      "unmatched_distinct_child_keys": 0,
+      "relationship": "observed key containment; does not prove semantic completeness"
+    },
+    {
+      "child_file": "olist_order_items_dataset.csv",
+      "child_key": "seller_id",
+      "parent_file": "olist_sellers_dataset.csv",
+      "parent_key": "seller_id",
+      "distinct_child_keys": 3095,
+      "distinct_parent_keys": 3095,
+      "unmatched_distinct_child_keys": 0,
+      "relationship": "observed key containment; does not prove semantic completeness"
+    }
+  ],
+  "field_quality": [
+    {
+      "dataset": "olist",
+      "file": "olist_customers_dataset.csv",
+      "column": "customer_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 99441,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_customers_dataset.csv",
+      "column": "customer_unique_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 96096,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_customers_dataset.csv",
+      "column": "customer_zip_code_prefix",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 14994,
+      "min_numeric": 1003.0,
+      "max_numeric": 99990.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_customers_dataset.csv",
+      "column": "customer_city",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 4119,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_customers_dataset.csv",
+      "column": "customer_state",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 27,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_geolocation_dataset.csv",
+      "column": "geolocation_zip_code_prefix",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 19015,
+      "min_numeric": 1001.0,
+      "max_numeric": 99990.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_geolocation_dataset.csv",
+      "column": "geolocation_lat",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 717372,
+      "min_numeric": -36.6053744107061,
+      "max_numeric": 45.06593318269697
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_geolocation_dataset.csv",
+      "column": "geolocation_lng",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 717615,
+      "min_numeric": -101.46676644931476,
+      "max_numeric": 121.10539381057764
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_geolocation_dataset.csv",
+      "column": "geolocation_city",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 8010,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_geolocation_dataset.csv",
+      "column": "geolocation_state",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 27,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "order_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 98666,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "order_item_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 21,
+      "min_numeric": 1.0,
+      "max_numeric": 21.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "product_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 32951,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "seller_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 3095,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "shipping_limit_date",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 93318,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "price",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 5968,
+      "min_numeric": 0.85,
+      "max_numeric": 6735.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "column": "freight_value",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 6999,
+      "min_numeric": 0.0,
+      "max_numeric": 409.68
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "column": "order_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 99440,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "column": "payment_sequential",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 29,
+      "min_numeric": 1.0,
+      "max_numeric": 29.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "column": "payment_type",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 5,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "column": "payment_installments",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 24,
+      "min_numeric": 0.0,
+      "max_numeric": 24.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "column": "payment_value",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 29077,
+      "min_numeric": 0.0,
+      "max_numeric": 13664.08
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "review_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 98410,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "order_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 98673,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "review_score",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 5,
+      "min_numeric": 1.0,
+      "max_numeric": 5.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "review_comment_title",
+      "inferred_type": "categorical/text",
+      "missing_count": 87658,
+      "missing_percent": 88.3435,
+      "distinct_nonmissing": 4178,
+      "min_numeric": 0.0,
+      "max_numeric": 10000000000000.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "review_comment_message",
+      "inferred_type": "categorical/text",
+      "missing_count": 58274,
+      "missing_percent": 58.7297,
+      "distinct_nonmissing": 35616,
+      "min_numeric": 0.0,
+      "max_numeric": 10.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "review_creation_date",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 636,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_reviews_dataset.csv",
+      "column": "review_answer_timestamp",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 98248,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 99441,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "customer_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 99441,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_status",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 8,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_purchase_timestamp",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 98875,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_approved_at",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 160,
+      "missing_percent": 0.1609,
+      "distinct_nonmissing": 90733,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_delivered_carrier_date",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 1783,
+      "missing_percent": 1.793,
+      "distinct_nonmissing": 81018,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_delivered_customer_date",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 2965,
+      "missing_percent": 2.9817,
+      "distinct_nonmissing": 95664,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "column": "order_estimated_delivery_date",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 459,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 32951,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_category_name",
+      "inferred_type": "categorical/text",
+      "missing_count": 610,
+      "missing_percent": 1.8512,
+      "distinct_nonmissing": 73,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_name_lenght",
+      "inferred_type": "categorical/text",
+      "missing_count": 610,
+      "missing_percent": 1.8512,
+      "distinct_nonmissing": 66,
+      "min_numeric": 5.0,
+      "max_numeric": 76.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_description_lenght",
+      "inferred_type": "categorical/text",
+      "missing_count": 610,
+      "missing_percent": 1.8512,
+      "distinct_nonmissing": 2960,
+      "min_numeric": 4.0,
+      "max_numeric": 3992.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_photos_qty",
+      "inferred_type": "numeric measure",
+      "missing_count": 610,
+      "missing_percent": 1.8512,
+      "distinct_nonmissing": 19,
+      "min_numeric": 1.0,
+      "max_numeric": 20.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_weight_g",
+      "inferred_type": "numeric measure",
+      "missing_count": 2,
+      "missing_percent": 0.0061,
+      "distinct_nonmissing": 2204,
+      "min_numeric": 0.0,
+      "max_numeric": 40425.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_length_cm",
+      "inferred_type": "numeric measure",
+      "missing_count": 2,
+      "missing_percent": 0.0061,
+      "distinct_nonmissing": 99,
+      "min_numeric": 7.0,
+      "max_numeric": 105.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_height_cm",
+      "inferred_type": "numeric measure",
+      "missing_count": 2,
+      "missing_percent": 0.0061,
+      "distinct_nonmissing": 102,
+      "min_numeric": 2.0,
+      "max_numeric": 105.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "column": "product_width_cm",
+      "inferred_type": "numeric measure",
+      "missing_count": 2,
+      "missing_percent": 0.0061,
+      "distinct_nonmissing": 95,
+      "min_numeric": 6.0,
+      "max_numeric": 118.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_sellers_dataset.csv",
+      "column": "seller_id",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 3095,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_sellers_dataset.csv",
+      "column": "seller_zip_code_prefix",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 2246,
+      "min_numeric": 1001.0,
+      "max_numeric": 99730.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_sellers_dataset.csv",
+      "column": "seller_city",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 611,
+      "min_numeric": 4482255.0,
+      "max_numeric": 4482255.0
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_sellers_dataset.csv",
+      "column": "seller_state",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 23,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "product_category_name_translation.csv",
+      "column": "product_category_name",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 71,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "olist",
+      "file": "product_category_name_translation.csv",
+      "column": "product_category_name_english",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 71,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "Invoice",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 28816,
+      "min_numeric": 489434.0,
+      "max_numeric": 538171.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "StockCode",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 4631,
+      "min_numeric": 10002.0,
+      "max_numeric": 90208.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "Description",
+      "inferred_type": "categorical/text",
+      "missing_count": 2928,
+      "missing_percent": 0.5572,
+      "distinct_nonmissing": 4643,
+      "min_numeric": 21494.0,
+      "max_numeric": 22719.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "Quantity",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 825,
+      "min_numeric": -9600.0,
+      "max_numeric": 19152.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "InvoiceDate",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 25296,
+      "min_numeric": 40148.322916666664,
+      "max_numeric": 40521.834027777775
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "Price",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 1606,
+      "min_numeric": -53594.36,
+      "max_numeric": 25111.09
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "Customer ID",
+      "inferred_type": "identifier/text",
+      "missing_count": 107927,
+      "missing_percent": 20.5395,
+      "distinct_nonmissing": 4383,
+      "min_numeric": 12346.0,
+      "max_numeric": 18287.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2009-2010",
+      "column": "Country",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 40,
+      "min_numeric": "",
+      "max_numeric": ""
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "Invoice",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 25900,
+      "min_numeric": 536365.0,
+      "max_numeric": 581587.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "StockCode",
+      "inferred_type": "identifier/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 4070,
+      "min_numeric": 10002.0,
+      "max_numeric": 90208.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "Description",
+      "inferred_type": "categorical/text",
+      "missing_count": 1454,
+      "missing_percent": 0.2683,
+      "distinct_nonmissing": 4211,
+      "min_numeric": 20713.0,
+      "max_numeric": 20713.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "Quantity",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 722,
+      "min_numeric": -80995.0,
+      "max_numeric": 80995.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "InvoiceDate",
+      "inferred_type": "datetime/text timestamp",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 23260,
+      "min_numeric": 40513.35138888889,
+      "max_numeric": 40886.53472222222
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "Price",
+      "inferred_type": "numeric measure",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 1630,
+      "min_numeric": -11062.06,
+      "max_numeric": 38970.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "Customer ID",
+      "inferred_type": "identifier/text",
+      "missing_count": 135080,
+      "missing_percent": 24.9266,
+      "distinct_nonmissing": 4372,
+      "min_numeric": 12346.0,
+      "max_numeric": 18287.0
+    },
+    {
+      "dataset": "online_retail_ii",
+      "file": "online_retail_II.xlsx / Year 2010-2011",
+      "column": "Country",
+      "inferred_type": "categorical/text",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "distinct_nonmissing": 38,
+      "min_numeric": "",
+      "max_numeric": ""
+    }
+  ],
+  "csv_parse_report": {
+    "olist_customers_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 99441,
+      "parsed_records": 99441,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_geolocation_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 1000163,
+      "parsed_records": 1000163,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_order_items_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 112650,
+      "parsed_records": 112650,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_order_payments_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 103886,
+      "parsed_records": 103886,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_order_reviews_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 99224,
+      "parsed_records": 99224,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_orders_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 99441,
+      "parsed_records": 99441,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_products_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 32951,
+      "parsed_records": 32951,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "olist_sellers_dataset.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 3095,
+      "parsed_records": 3095,
+      "rejected_records": 0,
+      "rejected_examples": []
+    },
+    "product_category_name_translation.csv": {
+      "delimiter": "','",
+      "doublequote": true,
+      "raw_records": 71,
+      "parsed_records": 71,
+      "rejected_records": 0,
+      "rejected_examples": []
+    }
+  },
+  "primary_key_checks": [
+    {
+      "dataset": "olist",
+      "file": "olist_customers_dataset.csv",
+      "candidate_key": "customer_id",
+      "rows": 99441,
+      "distinct_nonmissing": 99441,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 0,
+      "unique_nonmissing_key": true
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_orders_dataset.csv",
+      "candidate_key": "order_id",
+      "rows": 99441,
+      "distinct_nonmissing": 99441,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 0,
+      "unique_nonmissing_key": true
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_products_dataset.csv",
+      "candidate_key": "product_id",
+      "rows": 32951,
+      "distinct_nonmissing": 32951,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 0,
+      "unique_nonmissing_key": true
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_sellers_dataset.csv",
+      "candidate_key": "seller_id",
+      "rows": 3095,
+      "distinct_nonmissing": 3095,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 0,
+      "unique_nonmissing_key": true
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "candidate_key": "order_id",
+      "rows": 112650,
+      "distinct_nonmissing": 98666,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 13984,
+      "unique_nonmissing_key": false
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "candidate_key": "product_id",
+      "rows": 112650,
+      "distinct_nonmissing": 32951,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 79699,
+      "unique_nonmissing_key": false
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "candidate_key": "seller_id",
+      "rows": 112650,
+      "distinct_nonmissing": 3095,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 109555,
+      "unique_nonmissing_key": false
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_items_dataset.csv",
+      "candidate_key": "order_id+order_item_id",
+      "rows": 112650,
+      "distinct_nonmissing": 112650,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 0,
+      "unique_nonmissing_key": true
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "candidate_key": "order_id",
+      "rows": 103886,
+      "distinct_nonmissing": 99440,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 4446,
+      "unique_nonmissing_key": false
+    },
+    {
+      "dataset": "olist",
+      "file": "olist_order_payments_dataset.csv",
+      "candidate_key": "order_id+payment_sequential",
+      "rows": 103886,
+      "distinct_nonmissing": 103886,
+      "missing_key_rows": 0,
+      "duplicate_excess_rows": 0,
+      "unique_nonmissing_key": true
+    }
+  ],
+  "date_ranges": {
+    "olist_order_items_dataset.csv": {
+      "shipping_limit_date": {
+        "min": "2016-09-19 00:15:34",
+        "max": "2020-04-09 22:35:08",
+        "nonmissing_parsed": 112650
+      }
+    },
+    "olist_order_reviews_dataset.csv": {
+      "review_creation_date": {
+        "min": "2016-10-02 00:00:00",
+        "max": "2018-08-31 00:00:00",
+        "nonmissing_parsed": 99224
+      },
+      "review_answer_timestamp": {
+        "min": "2016-10-07 18:32:28",
+        "max": "2018-10-29 12:27:35",
+        "nonmissing_parsed": 99224
+      }
+    },
+    "olist_orders_dataset.csv": {
+      "order_purchase_timestamp": {
+        "min": "2016-09-04 21:15:19",
+        "max": "2018-10-17 17:30:18",
+        "nonmissing_parsed": 99441
+      },
+      "order_approved_at": {
+        "min": "2016-09-15 12:16:38",
+        "max": "2018-09-03 17:40:06",
+        "nonmissing_parsed": 99281
+      },
+      "order_delivered_carrier_date": {
+        "min": "2016-10-08 10:34:01",
+        "max": "2018-09-11 19:48:28",
+        "nonmissing_parsed": 97658
+      },
+      "order_delivered_customer_date": {
+        "min": "2016-10-11 13:46:32",
+        "max": "2018-10-17 13:22:46",
+        "nonmissing_parsed": 96476
+      },
+      "order_estimated_delivery_date": {
+        "min": "2016-09-30 00:00:00",
+        "max": "2018-11-12 00:00:00",
+        "nonmissing_parsed": 99441
+      }
+    }
+  },
+  "transaction_field_checks": {
+    "online_retail_II.xlsx": {
+      "sheets": {
+        "Year 2009-2010": {
+          "rows": 525461,
+          "negative_quantity_rows": 12326,
+          "zero_quantity_rows": 0,
+          "negative_price_rows": 3,
+          "zero_price_rows": 3687,
+          "cancellation_rows": 10206,
+          "distinct_cancellation_invoices": 4592,
+          "invoice_date_min": "2009-12-01 07:45:00",
+          "invoice_date_max": "2010-12-09 20:01:00"
+        },
+        "Year 2010-2011": {
+          "rows": 541910,
+          "negative_quantity_rows": 10624,
+          "zero_quantity_rows": 0,
+          "negative_price_rows": 2,
+          "zero_price_rows": 2515,
+          "cancellation_rows": 9288,
+          "distinct_cancellation_invoices": 3836,
+          "invoice_date_min": "2010-12-01 08:26:00",
+          "invoice_date_max": "2011-12-09 12:50:00"
+        }
+      },
+      "all_sheets_total_rows": 1067371,
+      "all_sheets_exact_duplicate_rows": 12133
+    }
+  }
+}

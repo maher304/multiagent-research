@@ -1,0 +1,10 @@
+dataset,table,expected_columns,actual_columns,missing_columns,unexpected_columns,schema_ok
+Olist,olist_customers_dataset.csv,5,5,,,True
+Olist,olist_geolocation_dataset.csv,5,5,,,True
+Olist,olist_orders_dataset.csv,8,8,,,True
+Olist,olist_order_items_dataset.csv,7,7,,,True
+Olist,olist_order_payments_dataset.csv,5,5,,,True
+Olist,olist_order_reviews_dataset.csv,7,7,,,True
+Olist,olist_products_dataset.csv,9,9,,,True
+Olist,olist_sellers_dataset.csv,4,4,,,True
+Olist,product_category_name_translation.csv,2,2,,,True

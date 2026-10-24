@@ -1,0 +1,37 @@
+\contentsline {section}{\numberline {1}Introduction and Research Context}{3}{section.1}%
+\contentsline {paragraph}{Scope and integrity statement.}{3}{section*.2}%
+\contentsline {section}{\numberline {2}Research Objectives and Dataset Selection Criteria}{3}{section.2}%
+\contentsline {section}{\numberline {3}Dataset Sources and Descriptions}{3}{section.3}%
+\contentsline {paragraph}{Provenance verification.}{4}{section*.5}%
+\contentsline {section}{\numberline {4}Methodology for Dataset Inspection}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Reproducible analysis package}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Definitions used}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Temporal parsing}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Exploratory Data Analysis Results}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}File and sheet inventory}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Olist: keys, relationships and join behaviour}{5}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Olist: completeness and duplicates}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Olist: distributions}{7}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Olist: monetary and temporal integrity}{8}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Online Retail II: completeness, duplicates and business signals}{8}{subsection.5.6}%
+\contentsline {paragraph}{Interpretation.}{9}{section*.15}%
+\contentsline {section}{\numberline {6}Data Quality Assessment}{10}{section.6}%
+\contentsline {paragraph}{Summary of quality findings.}{11}{section*.20}%
+\contentsline {section}{\numberline {7}Comparative Analysis}{11}{section.7}%
+\contentsline {paragraph}{Strengths and weaknesses.}{12}{section*.21}%
+\contentsline {paragraph}{Recommendation.}{12}{section*.22}%
+\contentsline {section}{\numberline {8}Mapping Datasets to the Proposed Agents}{12}{section.8}%
+\contentsline {section}{\numberline {9}Proposed Architecture and Data Ingestion Strategy}{13}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Layered architecture}{13}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Dataset-specific adapters}{14}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Minimal common internal representation}{14}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Example Experimental Scenarios}{14}{section.10}%
+\contentsline {section}{\numberline {11}Evaluation Protocol and Metrics}{15}{section.11}%
+\contentsline {paragraph}{Baselines.}{16}{section*.25}%
+\contentsline {paragraph}{Reproducibility requirements.}{16}{section*.26}%
+\contentsline {section}{\numberline {12}Audit Event Schema}{16}{section.12}%
+\contentsline {section}{\numberline {13}Limitations, Ethical Considerations and Threats to Validity}{16}{section.13}%
+\contentsline {section}{\numberline {14}Dataset Recommendation and Conclusion}{17}{section.14}%
+\contentsline {paragraph}{Recommendation.}{17}{section*.31}%
+\contentsline {paragraph}{Conclusion.}{17}{section*.32}%
+\contentsline {section}{\numberline {A}Supplementary Statistics}{18}{appendix.A}%

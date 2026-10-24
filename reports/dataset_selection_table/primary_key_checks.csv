@@ -1,0 +1,11 @@
+dataset,file,candidate_key,rows,distinct_nonmissing,missing_key_rows,duplicate_excess_rows,unique_nonmissing_key
+olist,olist_customers_dataset.csv,customer_id,99441,99441,0,0,True
+olist,olist_orders_dataset.csv,order_id,99441,99441,0,0,True
+olist,olist_products_dataset.csv,product_id,32951,32951,0,0,True
+olist,olist_sellers_dataset.csv,seller_id,3095,3095,0,0,True
+olist,olist_order_items_dataset.csv,order_id,112650,98666,0,13984,False
+olist,olist_order_items_dataset.csv,product_id,112650,32951,0,79699,False
+olist,olist_order_items_dataset.csv,seller_id,112650,3095,0,109555,False
+olist,olist_order_items_dataset.csv,order_id+order_item_id,112650,112650,0,0,True
+olist,olist_order_payments_dataset.csv,order_id,103886,99440,0,4446,False
+olist,olist_order_payments_dataset.csv,order_id+payment_sequential,103886,103886,0,0,True

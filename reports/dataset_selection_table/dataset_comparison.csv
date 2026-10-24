@@ -1,0 +1,7 @@
+criterion,olist,online_retail_ii,basis
+Local availability,High,High,Observed files in workspace; rating is local availability only.
+Workflow coverage,High,Medium,Olist has linked order/customer/payment/product/seller files; Retail II is line-level invoice-product data.
+Inventory history,Low,Low,Neither observed file set supplies stock-on-hand history or complete movements.
+Accounting ledger,Low,Low,Transaction evidence only; no chart of accounts or complete general ledger.
+Fraud labels,Low,Low,No verified fraud outcome label found in inspected source fields.
+Licensing verification,Unknown / Not verified,High,"UCI verifies CC BY 4.0, which permits sharing/adaptation with attribution; Olist terms require direct verification."

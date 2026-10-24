@@ -1,0 +1,19 @@
+criterion,olist,online_retail_ii
+Domain / business context,Brazilian online marketplace (Olist) covering multiple sellers,"UK-based online wholesale/gift retailer, two accounting periods"
+Source / provenance,Olist public dataset (Kaggle distribution); nine relational CSV files,"UCI Machine Learning Repository dataset 'Online Retail II'; single Excel workbook, two sheets"
+Time coverage,2016-09-04 21:15:19 to 2018-10-17 17:30:18,2009-12-01 07:45:00 to 2011-12-09 12:50:00
+Number of files / sheets,9 CSV files,"1 workbook, 2 worksheets"
+Rows (total),"1,550,922 data rows across files","1,067,371 transaction lines across sheets"
+Columns,4-9 per table; relational (normalised) schema,8 identical columns per sheet; single denormalised fact table
+Main entities / variables,"customers, orders, order items, payments, reviews, products, sellers, geolocation, category translation","invoice lines: Invoice, StockCode, Description, Quantity, InvoiceDate, Price, Customer ID, Country"
+Granularity of observations,"Multiple grains: order, order item, payment, review, product, seller",One row per invoice line (product-level transaction)
+Missingness,Concentrated in delivery timestamps and review text; product category missing in 610 products,Customer ID missing in 22.7669% of lines; Description occasionally missing
+Duplicate rows,Exact duplicate rows negligible; keys largely unique (see key checks),Exact duplicate rows negligible after normalisation; repeated invoice lines occur
+Data quality / preprocessing,"Relational joins, timestamp parsing, category translation mapping, currency in BRL, no returns/refunds table","Mixed-type invoice/stock codes, cancellations via 'C' prefix, negative quantities/prices, missing customer IDs, no product master"
+Use for e-commerce operations,"Strong: order lifecycle, statuses, payments, reviews, multi-seller orders","Strong: transaction-level sales, countries, repeat customers, cancellations"
+Use for inventory analysis,Indirect: items and product attributes support demand analysis; no stock levels,Indirect: quantities sold support demand and stock-out proxies; no stock levels
+Use for accounting workflows,Payments and item values support reconciliation prototypes; no general ledger,"Line values, cancellations and adjustments support reconciliation and revenue checks; no ledger"
+Use for anomaly detection,"Multi-table consistency checks, delivery/price outliers, review-score anomalies","Negative quantities, zero/negative prices, cancellations, extreme line values"
+Use for governance / audit experiments,Supports traceable evidence retrieval across linked tables; no policies,Supports transaction-level audit trails and rule checks; no policies
+Key limitations,"No returns/refunds, no cost/margin data, no stock movement; anonymised IDs","No product master, no order status, no cost data; missing customer IDs; no true labels for anomalies"
+License / redistribution,Distribution terms governed by the Kaggle dataset page (verify current data card),CC BY 4.0 per the UCI dataset record (verify current record)

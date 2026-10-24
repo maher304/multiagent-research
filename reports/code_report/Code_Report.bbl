@@ -1,0 +1,172 @@
+\begin{thebibliography}{10}
+
+\bibitem{nistAi6001}
+Chloe Autio, Reva Schwartz, Jesse Dunietz, Shomik Jain, Martin Stanley, Elham
+  Tabassi, Patrick Hall, and Kamie Roberts.
+\newblock {Artificial Intelligence Risk Management Framework: Generative
+  Artificial Intelligence Profile}.
+\newblock Technical Report NIST AI 600-1, National Institute of Standards and
+  Technology, 2024.
+
+\bibitem{batini2009}
+Carlo Batini, Cinzia Cappiello, Chiara Francalanci, and Andrea Maurino.
+\newblock {Methodologies for Data Quality Assessment and Improvement}.
+\newblock {\em ACM Computing Surveys}, 41(3):1--52, 2009.
+
+\bibitem{chandola2009}
+Varun Chandola, Arindam Banerjee, and Vipin Kumar.
+\newblock {Anomaly Detection: A Survey}.
+\newblock {\em ACM Computing Surveys}, 41(3):1--58, 2009.
+
+\bibitem{chen2012}
+Daqing Chen.
+\newblock {Online Retail II}, 2012.
+\newblock Licensed under Creative Commons Attribution 4.0 International (CC BY
+  4.0); 1{,}067{,}371 instances.
+
+\bibitem{coso2013}
+{Committee of Sponsoring Organizations of the Treadway Commission (COSO)}.
+\newblock {Internal Control --- Integrated Framework}.
+\newblock Framework, 2013.
+
+\bibitem{gdpr2016}
+{European Parliament and Council of the European Union}.
+\newblock {Regulation ({EU}) 2016/679 on the Protection of Natural Persons with
+  Regard to the Processing of Personal Data (General Data Protection
+  Regulation)}.
+\newblock Official Journal of the European Union, L 119, 2016.
+
+\bibitem{openpyxlDocs}
+Eric Gazoni and Charlie Clark.
+\newblock {openpyxl - A Python library to read/write Excel 2010 xlsx/xlsm
+  files}.
+\newblock Online documentation, 2024.
+\newblock Used as the \texttt{engine="openpyxl"} backend for
+  \texttt{pandas.read\_excel} in \texttt{online\_retail.load\_sheets()}.
+
+\bibitem{harris2020numpy}
+Charles~R. Harris, K.~Jarrod Millman, St{\'e}fan~J. van~der Walt, et~al.
+\newblock {Array programming with {NumPy}}.
+\newblock {\em Nature}, 585(7825):357--362, 2020.
+
+\bibitem{hevner2004}
+Alan~R. Hevner, Salvatore~T. March, Jinsoo Park, and Sudha Ram.
+\newblock {Design Science in Information Systems Research}.
+\newblock {\em MIS Quarterly}, 28(1):75--105, 2004.
+
+\bibitem{hunter2007matplotlib}
+John~D. Hunter.
+\newblock {Matplotlib: A 2D Graphics Environment}.
+\newblock {\em Computing in Science \& Engineering}, 9(3):90--95, 2007.
+
+\bibitem{iso42001}
+{International Organization for Standardization and International
+  Electrotechnical Commission}.
+\newblock {ISO/IEC 42001:2023 Information Technology --- Artificial
+  Intelligence --- Management System}.
+\newblock International Standard, Edition 1, 2023.
+\newblock Published 2023-12; prepared by ISO/IEC JTC 1/SC 42.
+
+\bibitem{matplotlibDocs}
+{Matplotlib Development Team}.
+\newblock {Matplotlib Documentation}.
+\newblock Online documentation, 2024.
+
+\bibitem{mckinney2010}
+Wes McKinney.
+\newblock {Data Structures for Statistical Computing in Python}.
+\newblock In {\em Proceedings of the 9th Python in Science Conference}, pages
+  56--61, 2010.
+\newblock Reference publication for the pandas library.
+
+\bibitem{miktexDocs}
+{MiKTeX Project}.
+\newblock {MiKTeX: a free cross-platform {\LaTeX} distribution}.
+\newblock Online documentation, 2024.
+\newblock MiKTeX-pdfTeX 4.18 (MiKTeX 24.1) with BibTeX 4.1 was used to compile
+  this report and its sibling reports.
+
+\bibitem{ngai2011}
+Eric W.~T. Ngai, Yong Hu, Y.~H. Wong, Yijun Chen, and Xin Sun.
+\newblock {The application of data mining techniques in financial fraud
+  detection: A classification framework and an academic review of literature}.
+\newblock {\em Decision Support Systems}, 50(3):559--569, 2011.
+
+\bibitem{numpyDocs}
+{NumPy Developers}.
+\newblock {NumPy Reference --- Documentation}.
+\newblock Online documentation, 2024.
+
+\bibitem{olistDataset}
+{Olist}.
+\newblock {Brazilian E-Commerce Public Dataset by Olist}.
+\newblock Online dataset, 2018.
+\newblock Nine relational CSV files; licence as stated on the Kaggle data card;
+  accessed via local copy.
+
+\bibitem{pytestDocs}
+{pytest development team}.
+\newblock {pytest: helps you write better programs --- Documentation}.
+\newblock Online documentation, 2024.
+\newblock Version 9.1.0 was used to execute the 13 unit tests of the analysis
+  package.
+
+\bibitem{pythonDocs}
+{Python Software Foundation}.
+\newblock {The Python Language Reference, version 3.10}.
+\newblock Online documentation, 2024.
+\newblock CPython 3.10.11 was the interpreter observed in the analysis
+  environment.
+
+\bibitem{russellNorvig2021}
+Stuart Russell and Peter Norvig.
+\newblock {\em Artificial Intelligence: A Modern Approach}.
+\newblock Pearson, Hoboken, NJ, USA, 4 edition, 2021.
+
+\bibitem{shoham2009}
+Yoav Shoham and Kevin Leyton-Brown.
+\newblock {\em Multiagent Systems: Algorithmic, Game-Theoretic, and Logical
+  Foundations}.
+\newblock Cambridge University Press, New York, USA, 2009.
+
+\bibitem{nistAirmf2023}
+Elham Tabassi.
+\newblock {Artificial Intelligence Risk Management Framework ({AI RMF} 1.0)}.
+\newblock Technical Report NIST AI 100-1, National Institute of Standards and
+  Technology, 2023.
+
+\bibitem{pandasDocs}
+{The pandas development team}.
+\newblock {pandas: powerful Python data analysis toolkit --- Documentation}.
+\newblock Online documentation, 2024.
+\newblock Version 2.3.3 was installed in the inspected environment;
+  \texttt{read\_csv}, \texttt{read\_excel}, \texttt{to\_datetime} and
+  \texttt{to\_numeric} are used by the analysis package.
+
+\bibitem{sox2002}
+{United States Congress}.
+\newblock {Sarbanes--Oxley Act of 2002}.
+\newblock Public Law 107--204, 116 Stat. 745, 2002.
+
+\bibitem{waskom2021seaborn}
+Michael~L. Waskom.
+\newblock {seaborn: statistical data visualization}.
+\newblock {\em Journal of Open Source Software}, 6(60):3021, 2021.
+
+\bibitem{seabornDocs}
+Michael~L. Waskom.
+\newblock {seaborn: statistical data visualization --- Documentation}.
+\newblock Online documentation, 2024.
+
+\bibitem{wilkinson2016}
+Mark~D. Wilkinson, Michel Dumontier, IJsbrand~Jan Aalbersberg, et~al.
+\newblock {The {FAIR} Guiding Principles for Scientific Data Management and
+  Stewardship}.
+\newblock {\em Scientific Data}, 3:160018, 2016.
+
+\bibitem{wooldridge2009}
+Michael Wooldridge.
+\newblock {\em An Introduction to MultiAgent Systems}.
+\newblock John Wiley \& Sons, Chichester, UK, 2 edition, 2009.
+
+\end{thebibliography}

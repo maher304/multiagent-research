@@ -1,0 +1,69 @@
+dataset,file,column,inferred_type,missing_count,missing_percent,distinct_nonmissing,min_numeric,max_numeric
+olist,olist_customers_dataset.csv,customer_id,identifier/text,0,0.0,99441,,
+olist,olist_customers_dataset.csv,customer_unique_id,identifier/text,0,0.0,96096,,
+olist,olist_customers_dataset.csv,customer_zip_code_prefix,categorical/text,0,0.0,14994,1003.0,99990.0
+olist,olist_customers_dataset.csv,customer_city,categorical/text,0,0.0,4119,,
+olist,olist_customers_dataset.csv,customer_state,categorical/text,0,0.0,27,,
+olist,olist_geolocation_dataset.csv,geolocation_zip_code_prefix,categorical/text,0,0.0,19015,1001.0,99990.0
+olist,olist_geolocation_dataset.csv,geolocation_lat,numeric measure,0,0.0,717372,-36.6053744107061,45.06593318269697
+olist,olist_geolocation_dataset.csv,geolocation_lng,numeric measure,0,0.0,717615,-101.46676644931476,121.10539381057764
+olist,olist_geolocation_dataset.csv,geolocation_city,categorical/text,0,0.0,8010,,
+olist,olist_geolocation_dataset.csv,geolocation_state,categorical/text,0,0.0,27,,
+olist,olist_order_items_dataset.csv,order_id,identifier/text,0,0.0,98666,,
+olist,olist_order_items_dataset.csv,order_item_id,identifier/text,0,0.0,21,1.0,21.0
+olist,olist_order_items_dataset.csv,product_id,identifier/text,0,0.0,32951,,
+olist,olist_order_items_dataset.csv,seller_id,identifier/text,0,0.0,3095,,
+olist,olist_order_items_dataset.csv,shipping_limit_date,datetime/text timestamp,0,0.0,93318,,
+olist,olist_order_items_dataset.csv,price,numeric measure,0,0.0,5968,0.85,6735.0
+olist,olist_order_items_dataset.csv,freight_value,numeric measure,0,0.0,6999,0.0,409.68
+olist,olist_order_payments_dataset.csv,order_id,identifier/text,0,0.0,99440,,
+olist,olist_order_payments_dataset.csv,payment_sequential,numeric measure,0,0.0,29,1.0,29.0
+olist,olist_order_payments_dataset.csv,payment_type,categorical/text,0,0.0,5,,
+olist,olist_order_payments_dataset.csv,payment_installments,numeric measure,0,0.0,24,0.0,24.0
+olist,olist_order_payments_dataset.csv,payment_value,numeric measure,0,0.0,29077,0.0,13664.08
+olist,olist_order_reviews_dataset.csv,review_id,identifier/text,0,0.0,98410,,
+olist,olist_order_reviews_dataset.csv,order_id,identifier/text,0,0.0,98673,,
+olist,olist_order_reviews_dataset.csv,review_score,numeric measure,0,0.0,5,1.0,5.0
+olist,olist_order_reviews_dataset.csv,review_comment_title,categorical/text,87658,88.3435,4178,0.0,10000000000000.0
+olist,olist_order_reviews_dataset.csv,review_comment_message,categorical/text,58274,58.7297,35616,0.0,10.0
+olist,olist_order_reviews_dataset.csv,review_creation_date,datetime/text timestamp,0,0.0,636,,
+olist,olist_order_reviews_dataset.csv,review_answer_timestamp,datetime/text timestamp,0,0.0,98248,,
+olist,olist_orders_dataset.csv,order_id,identifier/text,0,0.0,99441,,
+olist,olist_orders_dataset.csv,customer_id,identifier/text,0,0.0,99441,,
+olist,olist_orders_dataset.csv,order_status,categorical/text,0,0.0,8,,
+olist,olist_orders_dataset.csv,order_purchase_timestamp,datetime/text timestamp,0,0.0,98875,,
+olist,olist_orders_dataset.csv,order_approved_at,datetime/text timestamp,160,0.1609,90733,,
+olist,olist_orders_dataset.csv,order_delivered_carrier_date,datetime/text timestamp,1783,1.793,81018,,
+olist,olist_orders_dataset.csv,order_delivered_customer_date,datetime/text timestamp,2965,2.9817,95664,,
+olist,olist_orders_dataset.csv,order_estimated_delivery_date,datetime/text timestamp,0,0.0,459,,
+olist,olist_products_dataset.csv,product_id,identifier/text,0,0.0,32951,,
+olist,olist_products_dataset.csv,product_category_name,categorical/text,610,1.8512,73,,
+olist,olist_products_dataset.csv,product_name_lenght,categorical/text,610,1.8512,66,5.0,76.0
+olist,olist_products_dataset.csv,product_description_lenght,categorical/text,610,1.8512,2960,4.0,3992.0
+olist,olist_products_dataset.csv,product_photos_qty,numeric measure,610,1.8512,19,1.0,20.0
+olist,olist_products_dataset.csv,product_weight_g,numeric measure,2,0.0061,2204,0.0,40425.0
+olist,olist_products_dataset.csv,product_length_cm,numeric measure,2,0.0061,99,7.0,105.0
+olist,olist_products_dataset.csv,product_height_cm,numeric measure,2,0.0061,102,2.0,105.0
+olist,olist_products_dataset.csv,product_width_cm,numeric measure,2,0.0061,95,6.0,118.0
+olist,olist_sellers_dataset.csv,seller_id,identifier/text,0,0.0,3095,,
+olist,olist_sellers_dataset.csv,seller_zip_code_prefix,categorical/text,0,0.0,2246,1001.0,99730.0
+olist,olist_sellers_dataset.csv,seller_city,categorical/text,0,0.0,611,4482255.0,4482255.0
+olist,olist_sellers_dataset.csv,seller_state,categorical/text,0,0.0,23,,
+olist,product_category_name_translation.csv,product_category_name,categorical/text,0,0.0,71,,
+olist,product_category_name_translation.csv,product_category_name_english,categorical/text,0,0.0,71,,
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,Invoice,identifier/text,0,0.0,28816,489434.0,538171.0
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,StockCode,identifier/text,0,0.0,4631,10002.0,90208.0
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,Description,categorical/text,2928,0.5572,4643,21494.0,22719.0
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,Quantity,numeric measure,0,0.0,825,-9600.0,19152.0
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,InvoiceDate,datetime/text timestamp,0,0.0,25296,40148.322916666664,40521.834027777775
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,Price,numeric measure,0,0.0,1606,-53594.36,25111.09
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,Customer ID,identifier/text,107927,20.5395,4383,12346.0,18287.0
+online_retail_ii,online_retail_II.xlsx / Year 2009-2010,Country,categorical/text,0,0.0,40,,
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,Invoice,identifier/text,0,0.0,25900,536365.0,581587.0
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,StockCode,identifier/text,0,0.0,4070,10002.0,90208.0
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,Description,categorical/text,1454,0.2683,4211,20713.0,20713.0
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,Quantity,numeric measure,0,0.0,722,-80995.0,80995.0
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,InvoiceDate,datetime/text timestamp,0,0.0,23260,40513.35138888889,40886.53472222222
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,Price,numeric measure,0,0.0,1630,-11062.06,38970.0
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,Customer ID,identifier/text,135080,24.9266,4372,12346.0,18287.0
+online_retail_ii,online_retail_II.xlsx / Year 2010-2011,Country,categorical/text,0,0.0,38,,

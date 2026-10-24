@@ -1,0 +1,7 @@
+relationship,cardinality,parent_distinct,child_rows,max_children_per_parent,mean_children_per_parent,parents_with_zero_children
+orders -> order_items,one-to-many,99441,112650,21,1.1417,775
+orders -> order_payments,one-to-many,99441,103886,29,1.0447,1
+orders -> order_reviews,one-to-many,99441,99224,3,1.0056,768
+products -> order_items,one-to-many,32951,112650,527,3.4187,0
+sellers -> order_items,one-to-many,3095,112650,2033,36.3974,0
+customers -> orders,one-to-one on customer_id,99441,99441,1,1,0

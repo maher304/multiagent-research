@@ -1,0 +1,12 @@
+dataset,table,n_rows,n_cols
+Olist,olist_customers_dataset.csv,99441,5
+Olist,olist_geolocation_dataset.csv,1000163,5
+Olist,olist_orders_dataset.csv,99441,8
+Olist,olist_order_items_dataset.csv,112650,7
+Olist,olist_order_payments_dataset.csv,103886,5
+Olist,olist_order_reviews_dataset.csv,99224,7
+Olist,olist_products_dataset.csv,32951,9
+Olist,olist_sellers_dataset.csv,3095,4
+Olist,product_category_name_translation.csv,71,2
+OnlineRetailII,online_retail_II.xlsx[Year 2009-2010],525461,8
+OnlineRetailII,online_retail_II.xlsx[Year 2010-2011],541910,8

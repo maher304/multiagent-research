@@ -1,0 +1,10 @@
+dataset,table,n_rows,n_exact_duplicate_rows_raw,n_exact_duplicate_rows,exact_duplicate_pct
+Olist,customers,99441,0,0,0
+Olist,geolocation,1000163,261831,261831,26.1788
+Olist,orders,99441,0,0,0
+Olist,order_items,112650,0,0,0
+Olist,order_payments,103886,0,0,0
+Olist,order_reviews,99224,0,0,0
+Olist,products,32951,0,0,0
+Olist,sellers,3095,0,0,0
+Olist,product_category_name_translation,71,0,0,0

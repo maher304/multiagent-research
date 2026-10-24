@@ -1,0 +1,9 @@
+dataset,table,sheet,column,n_present,n_unique,top1_value,top1_count,top1_pct,top2_value,top2_count,top2_pct,low_cardinality
+OnlineRetailII,online_retail_II,Year 2009-2010,Invoice,525461,28816,537434,675,0.1285,538071,652,0.1241,False
+OnlineRetailII,online_retail_II,Year 2009-2010,StockCode,525461,4631,85123A,3516,0.6691,22423,2221,0.4227,False
+OnlineRetailII,online_retail_II,Year 2009-2010,Description,522533,4643,WHITE HANGING HEART T-LIGHT HOLDER,3549,0.6754,REGENCY CAKESTAND 3 TIER,2212,0.421,False
+OnlineRetailII,online_retail_II,Year 2009-2010,Country,525461,40,United Kingdom,485852,92.462,EIRE,9670,1.8403,True
+OnlineRetailII,online_retail_II,Year 2010-2011,Invoice,541910,25900,573585,1114,0.2056,581219,749,0.1382,False
+OnlineRetailII,online_retail_II,Year 2010-2011,StockCode,541910,4070,85123A,2313,0.4268,22423,2203,0.4065,False
+OnlineRetailII,online_retail_II,Year 2010-2011,Description,540456,4211,WHITE HANGING HEART T-LIGHT HOLDER,2369,0.4372,REGENCY CAKESTAND 3 TIER,2200,0.406,False
+OnlineRetailII,online_retail_II,Year 2010-2011,Country,541910,38,United Kingdom,495478,91.4318,Germany,9495,1.7521,True

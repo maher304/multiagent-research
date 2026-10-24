@@ -1,0 +1,90 @@
+\contentsline {section}{Glossary, Abbreviations and Status Vocabulary}{3}{section*.2}%
+\contentsline {section}{\numberline {1}Executive Summary}{3}{section.1}%
+\contentsline {paragraph}{Software objective.}{3}{section*.3}%
+\contentsline {paragraph}{What kind of system the repository contains.}{3}{section*.4}%
+\contentsline {paragraph}{Main implemented modules.}{3}{section*.5}%
+\contentsline {paragraph}{Technologies.}{4}{section*.6}%
+\contentsline {paragraph}{Implementation maturity.}{4}{section*.7}%
+\contentsline {paragraph}{Principal limitations.}{4}{section*.8}%
+\contentsline {section}{\numberline {2}Introduction and Software Scope}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Role of the codebase in the research project}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Concept, proposal, implementation and plan}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}What the current code can actually execute}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Development Environment and Technologies}{5}{section.3}%
+\contentsline {paragraph}{Technologies deliberately absent.}{6}{section*.10}%
+\contentsline {paragraph}{Operating-system assumptions.}{6}{section*.11}%
+\contentsline {section}{\numberline {4}Repository Structure}{7}{section.4}%
+\contentsline {paragraph}{Not present.}{8}{section*.13}%
+\contentsline {section}{\numberline {5}Software Architecture}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Layer by layer}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Architectural character}{9}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Main Execution Workflow}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Path A --- \texttt {python -m analysis}}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Path B --- \texttt {inspect\_datasets.py}}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Path C --- the test suite}{11}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Detailed Code Analysis}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}\texttt {analysis/config.py}}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}\texttt {analysis/profiling.py}}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}\texttt {analysis/olist.py}}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}\texttt {analysis/online\_retail.py}}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}\texttt {analysis/compare.py}}{12}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}\texttt {analysis/figures.py}}{13}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}\texttt {analysis/\_\_main\_\_.py}}{13}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}\texttt {reports/dataset\_report/tests/test\_analysis.py}}{13}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}\texttt {reports/dataset\_selection\_table/scripts/inspect\_datasets.py}}{13}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}\texttt {reports/Agents reports/figures/make\_figures.py}}{13}{subsection.7.10}%
+\contentsline {section}{\numberline {8}Implementation of the Seven Agents}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Orchestrator / Coordination Agent}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}E-Commerce Operations Agent}{14}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Inventory Management Agent}{14}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Accounting Agent}{14}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Risk and Anomaly Detection Agent}{15}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Governance and Policy Enforcement Agent}{15}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Audit and Traceability Agent}{15}{subsection.8.7}%
+\contentsline {section}{\numberline {9}Data Pipeline and Dataset Integration}{16}{section.9}%
+\contentsline {paragraph}{Input discovery and loading.}{16}{section*.20}%
+\contentsline {paragraph}{Formats and paths.}{16}{section*.21}%
+\contentsline {paragraph}{Column selection and type conversion.}{16}{section*.22}%
+\contentsline {paragraph}{Missing-value handling.}{16}{section*.23}%
+\contentsline {paragraph}{Duplicate detection.}{17}{section*.24}%
+\contentsline {paragraph}{Identifier validation.}{17}{section*.25}%
+\contentsline {paragraph}{Transformations and joins.}{17}{section*.26}%
+\contentsline {paragraph}{Feature engineering.}{17}{section*.27}%
+\contentsline {paragraph}{Output generation.}{17}{section*.28}%
+\contentsline {paragraph}{Operations performed by code versus recommendations.}{17}{section*.29}%
+\contentsline {paragraph}{A verified cross-tool inconsistency.}{17}{section*.30}%
+\contentsline {section}{\numberline {10}Data Contracts and Schemas}{17}{section.10}%
+\contentsline {paragraph}{What exists: implicit contracts.}{17}{section*.31}%
+\contentsline {paragraph}{What does not exist: agent-facing contracts.}{18}{section*.32}%
+\contentsline {section}{\numberline {11}Agent Communication and Workflow Orchestration}{18}{section.11}%
+\contentsline {paragraph}{Mechanism actually used.}{18}{section*.33}%
+\contentsline {paragraph}{Mechanisms not used.}{18}{section*.34}%
+\contentsline {paragraph}{Retries, error propagation and conflicting results.}{18}{section*.35}%
+\contentsline {section}{\numberline {12}Governance, Security and Audit Implementation}{19}{section.12}%
+\contentsline {section}{\numberline {13}Testing and Code Quality}{21}{section.13}%
+\contentsline {paragraph}{Framework and layout.}{21}{section*.39}%
+\contentsline {paragraph}{Command executed and observed result.}{21}{section*.40}%
+\contentsline {paragraph}{What the tests actually assert.}{21}{section*.41}%
+\contentsline {paragraph}{Reproducibility check performed.}{21}{section*.42}%
+\contentsline {paragraph}{Test layers that are absent.}{22}{section*.43}%
+\contentsline {paragraph}{Coverage gaps and recommended tests.}{22}{section*.44}%
+\contentsline {paragraph}{Tooling and code-quality observations.}{22}{section*.45}%
+\contentsline {section}{\numberline {14}Execution and Reproducibility Guide}{22}{section.14}%
+\contentsline {paragraph}{1. Prerequisites.}{22}{section*.46}%
+\contentsline {paragraph}{2. Environment setup.}{22}{section*.47}%
+\contentsline {paragraph}{3. Dependency installation.}{22}{section*.48}%
+\contentsline {paragraph}{4. Configuration setup.}{22}{section*.49}%
+\contentsline {paragraph}{5. Dataset placement.}{22}{section*.50}%
+\contentsline {paragraph}{6. Execution commands.}{23}{section*.51}%
+\contentsline {paragraph}{7. Test commands.}{23}{section*.52}%
+\contentsline {paragraph}{8. Output locations.}{23}{section*.53}%
+\contentsline {paragraph}{9. Troubleshooting.}{23}{section*.54}%
+\contentsline {section}{\numberline {15}Outputs and Evaluation}{23}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Artifacts produced by the code}{23}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Evaluation status and proposed plan}{25}{subsection.15.2}%
+\contentsline {section}{\numberline {16}Limitations and Technical Debt}{25}{section.16}%
+\contentsline {paragraph}{Note on integrity claims.}{26}{section*.57}%
+\contentsline {section}{\numberline {17}Development Roadmap}{27}{section.17}%
+\contentsline {section}{\numberline {18}Conclusion}{28}{section.18}%
+\contentsline {section}{\numberline {19}References and Technical Documentation}{28}{section.19}%
+\contentsline {section}{\numberline {A}Repository Inventory and Verification Log}{30}{appendix.A}%

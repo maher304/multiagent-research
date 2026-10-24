@@ -1,0 +1,6 @@
+join,left_rows,right_rows,inner_join_rows,row_inflation_factor
+orders INNER JOIN order_items ON order_id,99441,112650,112650,1.1328
+orders INNER JOIN order_payments ON order_id,99441,103886,103886,1.0447
+orders INNER JOIN order_reviews ON order_id,99441,99224,99224,0.9978
+order_items INNER JOIN products ON product_id,112650,32951,112650,1
+order_items INNER JOIN sellers ON seller_id,112650,3095,112650,1

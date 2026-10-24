@@ -1,0 +1,26 @@
+dataset,table,sheet,column,n_present,n_unique,top1_value,top1_count,top1_pct,top2_value,top2_count,top2_pct,low_cardinality
+Olist,customers,,customer_id,99441,99441,06b8999e2fba1a1fbc88172c00ba8bc7,1,0.001,c023f30c1147aeb0358474f3b1dbc707,1,0.001,False
+Olist,customers,,customer_unique_id,99441,96096,8d50f5eadf50201ccdcedfb9e2ac8455,17,0.0171,3e43e6105506432c953e165fb2acf44c,9,0.0091,False
+Olist,customers,,customer_city,99441,4119,sao paulo,15540,15.6274,rio de janeiro,6882,6.9207,False
+Olist,customers,,customer_state,99441,27,SP,41746,41.9807,RJ,12852,12.9242,True
+Olist,geolocation,,geolocation_city,1000163,8011,sao paulo,135800,13.5778,rio de janeiro,62151,6.2141,False
+Olist,geolocation,,geolocation_state,1000163,27,SP,404268,40.4202,MG,126336,12.6315,True
+Olist,orders,,order_id,99441,99441,e481f51cbdc54678b7cc49136f2d6af7,1,0.001,f01059d0d674e1282df4e8fbbe015aa2,1,0.001,False
+Olist,orders,,customer_id,99441,99441,9ef432eb6251297304e76186b10a928d,1,0.001,413f7e58270a32396af030a075b924be,1,0.001,False
+Olist,orders,,order_status,99441,8,delivered,96478,97.0203,shipped,1107,1.1132,True
+Olist,order_items,,order_id,112650,98666,8272b63d03f5f79c56e9e4120aec44ef,21,0.0186,1b15974a0141d54e36626dca3fdc731a,20,0.0178,False
+Olist,order_items,,product_id,112650,32951,aca2eb7d00ea1a7b8ebd4e68314663af,527,0.4678,99a4788cb24856965c36a24e339b6058,488,0.4332,False
+Olist,order_items,,seller_id,112650,3095,6560211a19b47992c3666cc44a7e94c0,2033,1.8047,4a3ca9315b744ce9f8e9374361493884,1987,1.7639,False
+Olist,order_payments,,order_id,103886,99440,fa65dad1b0e818e3ccc5cb0e39231352,29,0.0279,ccf804e764ed5650cd8759557269dc13,26,0.025,False
+Olist,order_payments,,payment_type,103886,5,credit_card,76795,73.9224,boleto,19784,19.044,True
+Olist,order_reviews,,review_id,99224,98410,7b606b0d57b078384f0b58eac1d41d78,3,0.003,dbdf1ea31790c8ecfcc6750525661a9b,3,0.003,False
+Olist,order_reviews,,order_id,99224,98673,c88b1d1b157a9999ce368f218a407141,3,0.003,8e17072ec97ce29f0e1f111e598b0c85,3,0.003,False
+Olist,order_reviews,,review_comment_title,11568,4527,Recomendo,423,0.4263,recomendo,345,0.3477,False
+Olist,order_reviews,,review_comment_message,40977,36159,Muito bom,230,0.2318,Bom,189,0.1905,False
+Olist,products,,product_id,32951,32951,1e9e8ef04dbcff4541ed26657ea517e5,1,0.003,d05cc9afc85771f597cf4bc9d8f12546,1,0.003,False
+Olist,products,,product_category_name,32341,73,cama_mesa_banho,3029,9.1924,esporte_lazer,2867,8.7008,False
+Olist,sellers,,seller_id,3095,3095,3442f8959a84dea7ee197c632cb2df15,1,0.0323,e26901d5ab434ce92fd9b5c256820a4e,1,0.0323,False
+Olist,sellers,,seller_city,3095,611,sao paulo,694,22.4233,curitiba,127,4.1034,False
+Olist,sellers,,seller_state,3095,23,SP,1849,59.7415,PR,349,11.2763,True
+Olist,product_category_name_translation,,product_category_name,71,71,beleza_saude,1,1.4085,alimentos,1,1.4085,False
+Olist,product_category_name_translation,,product_category_name_english,71,71,health_beauty,1,1.4085,food,1,1.4085,False

@@ -1,0 +1,139 @@
+\contentsline {section}{Glossary of Abbreviations}{3}{section*.2}%
+\contentsline {section}{\numberline {1}Executive Summary}{3}{section.1}%
+\contentsline {paragraph}{What was found.}{3}{section*.3}%
+\contentsline {paragraph}{What is implemented.}{3}{section*.4}%
+\contentsline {paragraph}{Datasets.}{4}{section*.5}%
+\contentsline {paragraph}{Governance and audit.}{4}{section*.6}%
+\contentsline {section}{\numberline {2}Introduction and Research Motivation}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Motivation}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Why a single unrestricted agent is insufficient}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Scope of this report}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}System Objectives and Scope}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objectives}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Expected users}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Operational scope and assumptions}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Prototype versus production}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Overall System Architecture}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Overview}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Implementation status of the architecture}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Interaction summary}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Individual Agent Specifications}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Agent 1 --- Orchestrator / Coordination Agent}{7}{subsection.5.1}%
+\contentsline {paragraph}{Purpose and responsibilities.}{7}{section*.9}%
+\contentsline {paragraph}{Inputs (schema).}{7}{section*.10}%
+\contentsline {paragraph}{Outputs (schema).}{7}{section*.11}%
+\contentsline {paragraph}{Internal workflow.}{7}{section*.12}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{7}{section*.13}%
+\contentsline {paragraph}{Interactions.}{7}{section*.14}%
+\contentsline {paragraph}{Governance and validation.}{7}{section*.15}%
+\contentsline {paragraph}{Error handling and fallback.}{7}{section*.16}%
+\contentsline {paragraph}{Implementation status.}{8}{section*.17}%
+\contentsline {paragraph}{Limitations and future improvements.}{8}{section*.18}%
+\contentsline {subsection}{\numberline {5.2}Agent 2 --- E-Commerce Operations Agent}{8}{subsection.5.2}%
+\contentsline {paragraph}{Purpose and responsibilities.}{8}{section*.19}%
+\contentsline {paragraph}{Inputs (schema).}{8}{section*.20}%
+\contentsline {paragraph}{Outputs (schema).}{8}{section*.21}%
+\contentsline {paragraph}{Internal workflow.}{8}{section*.22}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{8}{section*.23}%
+\contentsline {paragraph}{Interactions.}{8}{section*.24}%
+\contentsline {paragraph}{Governance and validation.}{8}{section*.25}%
+\contentsline {paragraph}{Error handling and fallback.}{8}{section*.26}%
+\contentsline {paragraph}{Implementation status.}{8}{section*.27}%
+\contentsline {paragraph}{Limitations and future improvements.}{8}{section*.28}%
+\contentsline {subsection}{\numberline {5.3}Agent 3 --- Inventory Management Agent}{9}{subsection.5.3}%
+\contentsline {paragraph}{Purpose and responsibilities.}{9}{section*.29}%
+\contentsline {paragraph}{Inputs (schema).}{9}{section*.30}%
+\contentsline {paragraph}{Outputs (schema).}{9}{section*.31}%
+\contentsline {paragraph}{Internal workflow.}{9}{section*.32}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{9}{section*.33}%
+\contentsline {paragraph}{Interactions.}{9}{section*.34}%
+\contentsline {paragraph}{Governance and validation.}{9}{section*.35}%
+\contentsline {paragraph}{Error handling and fallback.}{9}{section*.36}%
+\contentsline {paragraph}{Implementation status.}{9}{section*.37}%
+\contentsline {paragraph}{Limitations and future improvements.}{9}{section*.38}%
+\contentsline {subsection}{\numberline {5.4}Agent 4 --- Accounting Agent}{9}{subsection.5.4}%
+\contentsline {paragraph}{Purpose and responsibilities.}{9}{section*.39}%
+\contentsline {paragraph}{Inputs (schema).}{9}{section*.40}%
+\contentsline {paragraph}{Outputs (schema).}{10}{section*.41}%
+\contentsline {paragraph}{Internal workflow.}{10}{section*.42}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{10}{section*.43}%
+\contentsline {paragraph}{Interactions.}{10}{section*.44}%
+\contentsline {paragraph}{Governance and validation.}{10}{section*.45}%
+\contentsline {paragraph}{Error handling and fallback.}{10}{section*.46}%
+\contentsline {paragraph}{Implementation status.}{10}{section*.47}%
+\contentsline {paragraph}{Limitations and future improvements.}{10}{section*.48}%
+\contentsline {subsection}{\numberline {5.5}Agent 5 --- Risk and Anomaly Detection Agent}{10}{subsection.5.5}%
+\contentsline {paragraph}{Purpose and responsibilities.}{10}{section*.49}%
+\contentsline {paragraph}{Inputs (schema).}{10}{section*.50}%
+\contentsline {paragraph}{Outputs (schema).}{10}{section*.51}%
+\contentsline {paragraph}{Internal workflow.}{10}{section*.52}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{11}{section*.53}%
+\contentsline {paragraph}{Interactions.}{11}{section*.54}%
+\contentsline {paragraph}{Governance and validation.}{11}{section*.55}%
+\contentsline {paragraph}{Error handling and fallback.}{11}{section*.56}%
+\contentsline {paragraph}{Implementation status.}{11}{section*.57}%
+\contentsline {paragraph}{Limitations and future improvements.}{11}{section*.58}%
+\contentsline {subsection}{\numberline {5.6}Agent 6 --- Governance and Policy Enforcement Agent}{11}{subsection.5.6}%
+\contentsline {paragraph}{Purpose and responsibilities.}{11}{section*.59}%
+\contentsline {paragraph}{Inputs (schema).}{11}{section*.60}%
+\contentsline {paragraph}{Outputs (schema).}{11}{section*.61}%
+\contentsline {paragraph}{Internal workflow.}{11}{section*.62}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{11}{section*.63}%
+\contentsline {paragraph}{Interactions.}{11}{section*.64}%
+\contentsline {paragraph}{Governance and validation.}{11}{section*.65}%
+\contentsline {paragraph}{Error handling and fallback.}{11}{section*.66}%
+\contentsline {paragraph}{Implementation status.}{12}{section*.67}%
+\contentsline {paragraph}{Limitations and future improvements.}{12}{section*.68}%
+\contentsline {subsection}{\numberline {5.7}Agent 7 --- Audit and Traceability Agent}{12}{subsection.5.7}%
+\contentsline {paragraph}{Purpose and responsibilities.}{12}{section*.69}%
+\contentsline {paragraph}{Inputs (schema).}{12}{section*.70}%
+\contentsline {paragraph}{Outputs (schema).}{12}{section*.71}%
+\contentsline {paragraph}{Internal workflow.}{12}{section*.72}%
+\contentsline {paragraph}{Tools, APIs, libraries, data sources.}{12}{section*.73}%
+\contentsline {paragraph}{Interactions.}{12}{section*.74}%
+\contentsline {paragraph}{Governance and validation.}{12}{section*.75}%
+\contentsline {paragraph}{Error handling and fallback.}{12}{section*.76}%
+\contentsline {paragraph}{Implementation status.}{12}{section*.77}%
+\contentsline {paragraph}{Limitations and future improvements.}{12}{section*.78}%
+\contentsline {subsection}{\numberline {5.8}Agent comparison}{12}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Inter-Agent Communication and Coordination}{13}{section.6}%
+\contentsline {paragraph}{Task delegation.}{13}{section*.80}%
+\contentsline {paragraph}{Message formats.}{13}{section*.81}%
+\contentsline {paragraph}{Shared state and workflow context.}{13}{section*.82}%
+\contentsline {paragraph}{Dependencies.}{13}{section*.83}%
+\contentsline {paragraph}{Error propagation and retries.}{13}{section*.84}%
+\contentsline {paragraph}{Conflicting recommendations.}{13}{section*.85}%
+\contentsline {paragraph}{Conditions requiring human intervention.}{13}{section*.86}%
+\contentsline {section}{\numberline {7}Governance and Security Model}{14}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Governance lifecycle}{14}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Candidate policy rules}{14}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Security principles}{14}{subsection.7.3}%
+\contentsline {paragraph}{Least privilege.}{14}{section*.88}%
+\contentsline {paragraph}{Input validation.}{14}{section*.89}%
+\contentsline {paragraph}{Evidence requirements.}{14}{section*.90}%
+\contentsline {paragraph}{Controlled tool access.}{14}{section*.91}%
+\contentsline {paragraph}{Separation of recommendation and execution.}{15}{section*.92}%
+\contentsline {subsection}{\numberline {7.4}What is enforced versus recommended}{15}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Dataset and Agent Mapping}{15}{section.8}%
+\contentsline {paragraph}{Explicit absences.}{16}{section*.93}%
+\contentsline {section}{\numberline {9}End-to-End Workflow Scenarios}{16}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Scenario A --- Order and payment reconciliation}{16}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Scenario B --- Transaction anomaly investigation}{17}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Scenario C --- Inventory risk analysis}{18}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Scenario D --- Governance rejection}{19}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Data Contracts and Audit Schema}{20}{section.10}%
+\contentsline {paragraph}{Task request (proposed).}{20}{section*.98}%
+\contentsline {paragraph}{Agent result (proposed).}{20}{section*.99}%
+\contentsline {paragraph}{Anomaly finding (proposed).}{20}{section*.100}%
+\contentsline {paragraph}{Policy decision (proposed).}{21}{section*.101}%
+\contentsline {paragraph}{Audit event (proposed).}{21}{section*.102}%
+\contentsline {section}{\numberline {11}Evaluation Methodology}{21}{section.11}%
+\contentsline {paragraph}{Metrics.}{21}{section*.104}%
+\contentsline {paragraph}{Experimental procedure.}{22}{section*.106}%
+\contentsline {paragraph}{Reproducibility.}{22}{section*.107}%
+\contentsline {paragraph}{Limitations.}{22}{section*.108}%
+\contentsline {section}{\numberline {12}Failure Modes and Limitations}{22}{section.12}%
+\contentsline {paragraph}{Ethical considerations and privacy.}{23}{section*.109}%
+\contentsline {section}{\numberline {13}Implementation Roadmap}{23}{section.13}%
+\contentsline {section}{\numberline {14}Conclusion and Future Work}{23}{section.14}%
+\contentsline {section}{\numberline {A}Repository Inventory and Reproduction}{24}{appendix.A}%
